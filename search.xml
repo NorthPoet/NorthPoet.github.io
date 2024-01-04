@@ -4,46 +4,6 @@
   
     
     <entry>
-      <title>文件测试</title>
-      <link href="/posts/6a8c21b0.html"/>
-      <url>/posts/6a8c21b0.html</url>
-      
-        <content type="html"><![CDATA[<p>测试 .bat 文件是否成功</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo-pro 插件测试</title>
-      <link href="/posts/42793a86.html"/>
-      <url>/posts/42793a86.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>支持本地化</p></blockquote><h2 id="写作流程">写作流程</h2><ol><li class="lvl-3"><p>先在本地使用hexo-pro进行编写文章</p></li><li class="lvl-3"><p>然后再通过命令的方式进行部署到静态博客上面去</p></li></ol><p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-rrw7oq.jpg" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件工程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 响应式Web </tag>
-            
-            <tag> 操作系统 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Java复习</title>
       <link href="/posts/f7d3a65a.html"/>
       <url>/posts/f7d3a65a.html</url>
