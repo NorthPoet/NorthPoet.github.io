@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>hexo-pro 插件测试</title>
+      <link href="/posts/42793a86.html"/>
+      <url>/posts/42793a86.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>支持本地化</p></blockquote><h2 id="写作流程">写作流程</h2><ol><li class="lvl-3"><p>先在本地使用hexo-pro进行编写文章</p></li><li class="lvl-3"><p>然后再通过命令的方式进行部署到静态博客上面去</p></li></ol><p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-rrw7oq.jpg" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 响应式Web </tag>
+            
+            <tag> 操作系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>文章测试</title>
       <link href="/posts/2bb485aa.html"/>
       <url>/posts/2bb485aa.html</url>
