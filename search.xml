@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>第一章：Java语言概述</title>
+      <link href="/posts/f7c947df.html"/>
+      <url>/posts/f7c947df.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-注释">1. 注释</h2><p>注释的类型：</p><ul class="lvl-0"><li class="lvl-2"><p>单行注释</p></li><li class="lvl-2"><p>多行注释</p></li><li class="lvl-2"><p>文档注释</p></li></ul><p>注释的作用：</p><ul class="lvl-0"><li class="lvl-2"><p>提高了程序的可阅读性</p></li><li class="lvl-2"><p>用于调试程序的重要方法</p></li></ul><h2 id="2-Java核心机制：JVM">2. Java核心机制：JVM</h2><p><strong>优点：</strong></p><ul class="lvl-0"><li class="lvl-2"><p>跨平台性</p></li><li class="lvl-2"><p>面向对象性</p></li><li class="lvl-2"><p>健壮性</p></li><li class="lvl-2"><p>安全性高</p></li><li class="lvl-2"><p>简单性</p></li><li class="lvl-2"><p>高性能</p></li></ul><p><strong>缺点：</strong></p><ul class="lvl-0"><li class="lvl-2"><p>语法过于复杂严谨</p></li><li class="lvl-2"><p>一般适用于大型网站开发 ，维护成本高</p></li><li class="lvl-2"><p>并非适用于所有领域</p></li></ul><h3 id="2-1-JVM功能说明">2.1 JVM功能说明</h3><p>‍</p><blockquote><p><strong>JVM</strong>（<code>J</code>​ava <code>V</code>​irtual <code>M</code>​achine ，Java虚拟机）：是一个虚拟的计算机，是Java程序的运行环境。JVM具有指令集并使用不同的存储区域，负责执行指令，管理数据、内存、寄存器。</p></blockquote><p>‍</p><p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20240113110750-zdsmamv.png" alt="image">​</p><p>‍</p><ul class="lvl-0"><li class="lvl-2"><p>功能一：实现Java程序的跨平台性</p></li><li class="lvl-2"><p>功能二：自动内存管理(内存分配 ，内存回收)</p></li></ul><h2 id="3-面试题：">3. 面试题：</h2><blockquote><p>Java程序还会出现内存溢出和内存泄露问题吗？</p><p>答：Yes</p></blockquote><p>‍</p><p>‍</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaSE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaSE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java复习</title>
       <link href="/posts/f7d3a65a.html"/>
       <url>/posts/f7d3a65a.html</url>
