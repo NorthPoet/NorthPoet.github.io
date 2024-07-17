@@ -691,10 +691,10 @@ div#category {
 
 
 
-blockquote > :last-child {
+/* blockquote > :last-child {
   margin-bottom: 0 !important;
   color: #000000;
-}
+} */
 
 
 
