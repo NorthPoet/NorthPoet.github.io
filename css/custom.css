@@ -696,6 +696,66 @@ div#category {
   color: #000000;
 } */
 
+/* 标签 */
+
+#aside-content .card-tag-cloud a {
+  /* border: 1px solid; */
+  line-height: 1.5;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 0 5px;
+}
+
+.tag-cloud-list a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 10px 17px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* 全局宽度 */
+.layout {
+  max-width: 1400px;
+}
+
+/* 侧边卡片栏宽度 */
+.aside-content {
+  max-width: 318px;
+  min-width: 300px;
+}
+
+/* 平板尺寸自适应(不启用侧边栏宽度限制) */
+@media screen and (max-width: 900px) {
+  .aside-content {
+    max-width: none !important;
+    padding: 0 5px 0 5px;
+  }
+}
+
+
+[data-theme="light"] #aside-content > .card-widget.card-info {
+  background-image: url(https://s11.ax1x.com/2023/05/02/p9GWEin.jpg);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+  background-image: url(https://s11.ax1x.com/2023/05/02/p9GWVGq.jpg);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+
+/* 分类页面空白区域消失 */
+#categories-chart {
+  display: none;
+}
+#tags-chart {
+  display: none;
+}
+
 
 /* 分类页面样式 */
 #page .category-lists .category-list .category-list-item {
@@ -814,7 +874,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(2) a.category-list-link::before {
-  content: "📚";
+  content: "🍁";
 }
 
 /* 博客搭建 */
@@ -839,7 +899,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(4) a.category-list-link::before {
-  content: "📖";
+  content: "📔";
 }
 
 /* 实用教程 */
@@ -852,7 +912,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(5) a.category-list-link::before {
-  content: "✨";
+  content: "📖";
 }
 /* 敲敲代码 */
 #page .category-lists .category-list li.category-list-item:nth-child(6) {
@@ -880,54 +940,4 @@ div#category {
   content: "💬";
 }
 
-/* 标签 */
 
-#aside-content .card-tag-cloud a {
-  /* border: 1px solid; */
-  line-height: 1.5;
-  border-radius: 6px;
-  margin: 3px;
-  padding: 0 5px;
-}
-
-.tag-cloud-list a {
-  border: 1px solid;
-  line-height: 1.5;
-  border-radius: 6px;
-  padding: 10px 17px;
-  font-size: 16px;
-  margin: 5px;
-}
-
-/* 全局宽度 */
-.layout {
-  max-width: 1400px;
-}
-
-/* 侧边卡片栏宽度 */
-.aside-content {
-  max-width: 318px;
-  min-width: 300px;
-}
-
-/* 平板尺寸自适应(不启用侧边栏宽度限制) */
-@media screen and (max-width: 900px) {
-  .aside-content {
-    max-width: none !important;
-    padding: 0 5px 0 5px;
-  }
-}
-
-
-[data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://s11.ax1x.com/2023/05/02/p9GWEin.jpg);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://s11.ax1x.com/2023/05/02/p9GWVGq.jpg);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
