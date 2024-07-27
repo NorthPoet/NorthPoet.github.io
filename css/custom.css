@@ -940,3 +940,12 @@ div#category {
   content: "💬";
 }
 
+/* 生肖大小 */
+svg.icon {
+  width: 3em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
