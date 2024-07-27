@@ -883,7 +883,7 @@ div#category {
 /* 标签 */
 
 #aside-content .card-tag-cloud a {
-  border: 1px solid;
+  /* border: 1px solid; */
   line-height: 1.5;
   border-radius: 6px;
   margin: 3px;
@@ -897,4 +897,28 @@ div#category {
   padding: 10px 17px;
   font-size: 16px;
   margin: 5px;
+}
+
+/* 全局宽度 */
+.layout {
+  max-width: 1400px;
+}
+
+/* 侧边卡片栏宽度 */
+.aside-content {
+  max-width: 318px;
+  min-width: 300px;
+}
+
+/* 平板尺寸自适应(不启用侧边栏宽度限制) */
+@media screen and (max-width: 900px) {
+  .aside-content {
+    max-width: none !important;
+    padding: 0 5px 0 5px;
+  }
+}
+
+.loading-img {
+  background: url(https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/avatar.webp) no-repeat center center;
+  background-size: cover;
 }
