@@ -918,7 +918,16 @@ div#category {
   }
 }
 
-.loading-img {
-  background: url(https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/avatar.webp) no-repeat center center;
-  background-size: cover;
+
+[data-theme="light"] #aside-content > .card-widget.card-info {
+  background-image: url(https://s11.ax1x.com/2023/05/02/p9GWEin.jpg);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+  background-image: url(https://s11.ax1x.com/2023/05/02/p9GWVGq.jpg);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
 }
