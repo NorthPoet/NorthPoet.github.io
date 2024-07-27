@@ -801,7 +801,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(1) a.category-list-link::before {
-  content: "📑";
+  content: "🐳";
 }
 
 /* 博客总结 */
@@ -839,7 +839,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(4) a.category-list-link::before {
-  content: "📔";
+  content: "📖";
 }
 
 /* 实用教程 */
@@ -880,3 +880,21 @@ div#category {
   content: "💬";
 }
 
+/* 标签 */
+
+#aside-content .card-tag-cloud a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 0 5px;
+}
+
+.tag-cloud-list a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 10px 17px;
+  font-size: 16px;
+  margin: 5px;
+}
