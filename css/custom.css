@@ -861,7 +861,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(1) a.category-list-link::before {
-  content: "🐳";
+  /* content: "🐳"; */
 }
 
 /* 博客总结 */
@@ -874,7 +874,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(2) a.category-list-link::before {
-  content: "🍁";
+  /* content: "🍁"; */
 }
 
 /* 博客搭建 */
@@ -887,7 +887,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(3) a.category-list-link::before {
-  content: "🦋";
+  /* content: "🦋"; */
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(4) {
@@ -899,7 +899,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(4) a.category-list-link::before {
-  content: "📔";
+  /* content: "📔"; */
 }
 
 /* 实用教程 */
@@ -912,7 +912,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(5) a.category-list-link::before {
-  content: "📖";
+  /* content: "📖"; */
 }
 /* 敲敲代码 */
 #page .category-lists .category-list li.category-list-item:nth-child(6) {
@@ -924,7 +924,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(6) a.category-list-link::before {
-  content: "💻";
+  /* content: "💻"; */
 }
 
 /* 生活杂谈 */
@@ -937,7 +937,7 @@ div#category {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(7) a.category-list-link::before {
-  content: "💬";
+  /* content: "💬"; */
 }
 
 /* 生肖大小 */
