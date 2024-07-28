@@ -940,6 +940,19 @@ div#category {
   /* content: "💬"; */
 }
 
+#page .category-lists .category-list .category-list-item {
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+  width: 48%;
+  font-weight: 700;
+  margin: 0 0.5% 2% 0.5%;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: rgb(50 50 50 / 30%) 50px 50px 50px 50px inset;
+  box-shadow: rgb(183 183 183 / 30%) 50px 50px 50px 50px inset;
+  border-radius: 8px;
+}
+
 /* 生肖大小 */
 svg.icon {
   width: 3em;
