@@ -948,13 +948,3 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
-
-
-.history_slide {
-  text-align: left;
-  font-size: 14px;
-  background: rgba(255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
