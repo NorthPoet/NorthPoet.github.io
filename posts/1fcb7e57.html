@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>第三章：流程控制语句 | 捞月亮の小北</title><meta name="author" content="捞月亮の小北"><meta name="copyright" content="捞月亮の小北"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="第三章：流程控制语句1. 顺序结构 特点：从上到下依次执行 ，中间没有任何判断和跳转  2. 分支语句2.1 if-else 条件判断结构 结构一： 单分支条件判断 ：if  格式： 123if(条件表达式) &#123;	语句块;&#125; 说明：条件表达式必须是布尔表达式(关系表达式或逻辑表达式)或布尔变量   结构二：双分支条件判断： if-else  格式 12345if(条件表达式)">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>第三章：流程控制语句 | 捞月亮の小北</title><meta name="author" content="捞月亮の小北"><meta name="copyright" content="捞月亮の小北"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="第三章：流程控制语句 1. 顺序结构   特点：从上到下依次执行 ，中间没有任何判断和跳转   2. 分支语句 2.1 if-else 条件判断结构   结构一： 单分支条件判断 ：if   格式： 123if(条件表达式) &#123;	语句块;&#125;   说明：条件表达式必须是布尔表达式(关系表达式或逻辑表达式)或布尔变量     结构二：双分支条件判断： if-else   格式 12">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第三章：流程控制语句">
 <meta property="og:url" content="https://northpoet.github.io/posts/1fcb7e57.html">
 <meta property="og:site_name" content="捞月亮の小北">
-<meta property="og:description" content="第三章：流程控制语句1. 顺序结构 特点：从上到下依次执行 ，中间没有任何判断和跳转  2. 分支语句2.1 if-else 条件判断结构 结构一： 单分支条件判断 ：if  格式： 123if(条件表达式) &#123;	语句块;&#125; 说明：条件表达式必须是布尔表达式(关系表达式或逻辑表达式)或布尔变量   结构二：双分支条件判断： if-else  格式 12345if(条件表达式)">
+<meta property="og:description" content="第三章：流程控制语句 1. 顺序结构   特点：从上到下依次执行 ，中间没有任何判断和跳转   2. 分支语句 2.1 if-else 条件判断结构   结构一： 单分支条件判断 ：if   格式： 123if(条件表达式) &#123;	语句块;&#125;   说明：条件表达式必须是布尔表达式(关系表达式或逻辑表达式)或布尔变量     结构二：双分支条件判断： if-else   格式 12">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-l8vp7y.jpg">
 <meta property="article:published_time" content="2024-07-18T01:22:57.000Z">
@@ -156,217 +156,307 @@
     })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
 <style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
   white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
-<link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-l8vp7y.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="捞月亮の小北"><span class="site-name">捞月亮の小北</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">第三章：流程控制语句</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-18T01:22:57.000Z" title="发表于 2024-07-18 09:22:57">2024-07-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-27T05:45:15.905Z" title="更新于 2024-07-27 13:45:15">2024-07-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java%E5%90%8E%E7%AB%AF/">Java后端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="第三章：流程控制语句"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第三章：流程控制语句"><a href="#第三章：流程控制语句" class="headerlink" title="第三章：流程控制语句"></a>第三章：流程控制语句</h1><h2 id="1-顺序结构"><a href="#1-顺序结构" class="headerlink" title="1. 顺序结构"></a>1. 顺序结构</h2><ul>
-<li>特点：从上到下依次执行 ，中间没有任何判断和跳转</li>
-</ul>
-<h2 id="2-分支语句"><a href="#2-分支语句" class="headerlink" title="2. 分支语句"></a>2. 分支语句</h2><h4 id="2-1-if-else-条件判断结构"><a href="#2-1-if-else-条件判断结构" class="headerlink" title="2.1 if-else 条件判断结构"></a>2.1 <span data-type="text" style="color: var(--b3-font-color2);">if-else 条件判断结构</span></h4><ul>
-<li><p>结构一： 单分支条件判断 ：if</p>
-<ul>
-<li><p>格式：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件表达式) &#123;</span><br><span class="line">	语句块;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>说明：条件表达式必须是布尔表达式(关系表达式或逻辑表达式)或布尔变量</li>
-</ul>
+<link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-l8vp7y.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="捞月亮の小北"><span class="site-name">捞月亮の小北</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">第三章：流程控制语句</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-18T01:22:57.000Z" title="发表于 2024-07-18 09:22:57">2024-07-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-27T05:45:15.905Z" title="更新于 2024-07-27 13:45:15">2024-07-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java%E5%90%8E%E7%AB%AF/">Java后端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="第三章：流程控制语句"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>第三章：流程控制语句</h1>
+<h2 id="1-顺序结构">1. 顺序结构</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>特点：从上到下依次执行 ，中间没有任何判断和跳转</p>
 </li>
-<li><p>结构二：双分支条件判断： if-else</p>
-<ul>
-<li><p>格式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件表达式) &#123; </span><br><span class="line">  	语句块<span class="number">1</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">  	语句块<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
+<h2 id="2-分支语句">2. 分支语句</h2>
+<h4 id="2-1-span-data-type-text-style-color-var-b3-font-color2-if-else-条件判断结构-span">2.1 <span data-type="text" style="color: var(--b3-font-color2);">if-else 条件判断结构</span></h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>结构一： 单分支条件判断 ：if</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>格式：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件表达式) &#123;</span><br><span class="line">	语句块;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>格式三： 多分支条件判断： if…else if….else</p>
-<ul>
-<li><p>格式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件表达式<span class="number">1</span>) &#123;</span><br><span class="line">  	语句块<span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (条件表达式<span class="number">2</span>) &#123;</span><br><span class="line">  	语句块<span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span> (条件表达式n) &#123;</span><br><span class="line"> 	语句块n;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  	语句块n+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>说明：一旦表达式为true , 则进入执行相应的语句块，执行完成对应的语句块之后 ，就跳出当前结构</li>
-<li><p>注意：</p>
-<ul>
-<li>当条件表达式之间是“<code>互斥</code>​”关系时（即彼此没有交集），条件判断语句及执行语句间顺序无所谓。</li>
-<li>当条件表达式之间是“<code>包含</code>​”关系时，“<code>小上大下 / 子上父下</code>​”，否则范围小的条件表达式将不可能被执行。</li>
-</ul>
+<li class="lvl-4">
+<p>说明：条件表达式必须是布尔表达式(关系表达式或逻辑表达式)或布尔变量</p>
 </li>
 </ul>
 </li>
+<li class="lvl-2">
+<p>结构二：双分支条件判断： if-else</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>格式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件表达式) &#123; </span><br><span class="line">  	语句块<span class="number">1</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">  	语句块<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h4 id="2-2-if…else-嵌套"><a href="#2-2-if…else-嵌套" class="headerlink" title="2.2 if…else 嵌套"></a>2.2 <span data-type="text" style="color: var(--b3-font-color2);">if…else 嵌套</span></h4><ul>
-<li><p>执行的特点</p>
+</li>
+<li class="lvl-2">
+<p>格式三： 多分支条件判断： if…else if…else</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>格式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件表达式<span class="number">1</span>) &#123;</span><br><span class="line">  	语句块<span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (条件表达式<span class="number">2</span>) &#123;</span><br><span class="line">  	语句块<span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span> (条件表达式n) &#123;</span><br><span class="line"> 	语句块n;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  	语句块n+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-4">
+<p>说明：一旦表达式为true , 则进入执行相应的语句块，执行完成对应的语句块之后 ，就跳出当前结构</p>
+</li>
+<li class="lvl-4">
+<p>注意：</p>
+<ul class="lvl-4">
+<li class="lvl-6">当条件表达式之间是“<code>互斥</code>​”关系时（即彼此没有交集），条件判断语句及执行语句间顺序无所谓。</li>
+<li class="lvl-6">当条件表达式之间是“<code>包含</code>​”关系时，“<code>小上大下 / 子上父下</code>​”，否则范围小的条件表达式将不可能被执行。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-2-span-data-type-text-style-color-var-b3-font-color2-if…else-嵌套-span">2.2 <span data-type="text" style="color: var(--b3-font-color2);">if…else 嵌套</span></h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>执行的特点</p>
 <ol>
-<li>如果是嵌套在if语句块中的，只有当外部的if条件满足，才会去判断内部的条件</li>
-<li>如果是嵌套在else语句块中的，只有当外部的if条件不满足，进入else后，才会去判断内部的条件</li>
+<li class="lvl-5">如果是嵌套在if语句块中的，只有当外部的if条件满足，才会去判断内部的条件</li>
+<li class="lvl-5">如果是嵌套在else语句块中的，只有当外部的if条件不满足，进入else后，才会去判断内部的条件</li>
 </ol>
 </li>
 </ul>
 <p><span data-type="text" style="color: var(--b3-font-color4);">其他说明：</span></p>
-<ul>
-<li>语句块只有一条执行语句时，一对<code>&#123;&#125;可以省略</code>​，但建议保留</li>
-<li>当 if-else 结构是 “多选一”时 ，最后 else是可选的 ， 根据需要可以省略</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>语句块只有一条执行语句时，一对<code>&#123;&#125;可以省略</code>​，但建议保留</p>
+</li>
+<li class="lvl-2">
+<p>当 if-else 结构是 “多选一”时 ，最后 else是可选的 ， 根据需要可以省略</p>
+</li>
 </ul>
-<h4 id="2-3-switch-case-选择结构"><a href="#2-3-switch-case-选择结构" class="headerlink" title="2.3 switch-case 选择结构"></a>2.3 switch-case 选择结构</h4><ul>
-<li><p>基本语法</p>
-<ul>
-<li><p>语法格式：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式)&#123;</span><br><span class="line">    <span class="keyword">case</span> 常量值<span class="number">1</span>:</span><br><span class="line">        语句块<span class="number">1</span>;</span><br><span class="line">        <span class="comment">//break;</span></span><br><span class="line">    <span class="keyword">case</span> 常量值<span class="number">2</span>:</span><br><span class="line">        语句块<span class="number">2</span>;</span><br><span class="line">        <span class="comment">//break; </span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">   [<span class="keyword">default</span>:</span><br><span class="line">        语句块n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">   ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>使用注意点：</p>
-<ul>
-<li>switch(表达式)中表达式的值必须是下述几种类型之一：byte，short，char，int，枚举 (jdk 5.0)，String (jdk 7.0)；</li>
-<li>==case子句中的值必须是常量==​，不能是变量名或不确定的表达式值或范围；</li>
-<li>同一个switch语句，所有case子句中的常量值互不相同；</li>
-<li>break语句用来在执行完一个case分支后使程序跳出switch语句块；<br>如果没有break，程序会顺序执行到switch结尾；</li>
-<li>default子句是可选的。同时，位置也是灵活的。当没有匹配的case时，执行default语句。</li>
+<h4 id="2-3-switch-case-选择结构">2.3 switch-case 选择结构</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>基本语法</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>语法格式：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式)&#123;</span><br><span class="line">    <span class="keyword">case</span> 常量值<span class="number">1</span>:</span><br><span class="line">        语句块<span class="number">1</span>;</span><br><span class="line">        <span class="comment">//break;</span></span><br><span class="line">    <span class="keyword">case</span> 常量值<span class="number">2</span>:</span><br><span class="line">        语句块<span class="number">2</span>;</span><br><span class="line">        <span class="comment">//break; </span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">   [<span class="keyword">default</span>:</span><br><span class="line">        语句块n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">   ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-4">
+<p>使用注意点：</p>
+<ul class="lvl-4">
+<li class="lvl-6">switch(表达式)中表达式的值必须是下述几种类型之一：byte，short，char，int，枚举 (jdk 5.0)，String (jdk 7.0)；</li>
+<li class="lvl-6"><mark>case子句中的值必须是常量</mark>​，不能是变量名或不确定的表达式值或范围；</li>
+<li class="lvl-6">同一个switch语句，所有case子句中的常量值互不相同；</li>
+<li class="lvl-6">break语句用来在执行完一个case分支后使程序跳出switch语句块；<br>
+如果没有break，程序会顺序执行到switch结尾；</li>
+<li class="lvl-6">default子句是可选的。同时，位置也是灵活的。当没有匹配的case时，执行default语句。</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>利用case的穿透性：</p>
-<ul>
-<li>在switch语句中，如果case的后面不写break，将出现穿透现象，也就是一旦匹配成功，不会在判断下一个case的值，直接向后运行，直到遇到break或者整个switch语句结束，执行终止。</li>
+<li class="lvl-2">
+<p>利用case的穿透性：</p>
+<ul class="lvl-2">
+<li class="lvl-4">在switch语句中，如果case的后面不写break，将出现穿透现象，也就是一旦匹配成功，不会在判断下一个case的值，直接向后运行，直到遇到break或者整个switch语句结束，执行终止。</li>
 </ul>
 </li>
 </ul>
-<h4 id="2-4-if-else-语句与switch-case语句比较"><a href="#2-4-if-else-语句与switch-case语句比较" class="headerlink" title="2.4 if-else 语句与switch-case语句比较"></a>2.4 if-else 语句与switch-case语句比较</h4><ul>
-<li>结论：凡是使用switch-case的结构都可以转换为if-else结构。反之，不成立。</li>
-<li>开发经验：如果既可以使用switch-case，又可以使用if-else，建议使用switch-case。因为效率稍高。</li>
-<li><p>细节对比：</p>
-<ul>
-<li><p>if-else语句优势</p>
-<ul>
-<li>if语句的条件是一个布尔类型值，if条件表达式为true则进入分支，可以用于范围的判断，也可以用于等值的判断，<code>使用范围更广</code>​。</li>
-<li>switch语句的条件是一个常量值（byte,short,int,char,枚举,String），只能判断某个变量或表达式的结果是否等于某个常量值，<code>使用场景较狭窄</code>​。</li>
+<h4 id="2-4-if-else-语句与switch-case语句比较">2.4 if-else 语句与switch-case语句比较</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>结论：凡是使用switch-case的结构都可以转换为if-else结构。反之，不成立。</p>
+</li>
+<li class="lvl-2">
+<p>开发经验：如果既可以使用switch-case，又可以使用if-else，建议使用switch-case。因为效率稍高。</p>
+</li>
+<li class="lvl-2">
+<p>细节对比：</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>if-else语句优势</p>
+<ul class="lvl-4">
+<li class="lvl-6">if语句的条件是一个布尔类型值，if条件表达式为true则进入分支，可以用于范围的判断，也可以用于等值的判断，<code>使用范围更广</code>​。</li>
+<li class="lvl-6">switch语句的条件是一个常量值（byte,short,int,char,枚举,String），只能判断某个变量或表达式的结果是否等于某个常量值，<code>使用场景较狭窄</code>​。</li>
 </ul>
 </li>
-<li><p>switch语句优势</p>
-<ul>
-<li>当条件是判断某个变量或表达式是否等于某个固定的常量值时，使用if和switch都可以，习惯上使用switch更多。因为<code>效率稍高</code>​。当条件是区间范围的判断时，只能使用if语句。</li>
-<li>使用switch可以利用<code>穿透性</code>​，同时执行多个分支，而if…else没有穿透性。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="3-循环语句"><a href="#3-循环语句" class="headerlink" title="3. 循环语句"></a>3. 循环语句</h2><ul>
-<li>理解：循环语句具有在某些条件下满足的情况下 ，反复执行特定代码的功能</li>
-<li><p>循环结构分类：</p>
-<ul>
-<li>for循环</li>
-<li>while循环</li>
-<li>do-while循环</li>
-</ul>
-</li>
-<li><p>循环结构四要素</p>
-<ul>
-<li>初始部分</li>
-<li>循环条件部分</li>
-<li>循环体部分</li>
-<li>迭代部分</li>
+<li class="lvl-4">
+<p>switch语句优势</p>
+<ul class="lvl-4">
+<li class="lvl-6">当条件是判断某个变量或表达式是否等于某个固定的常量值时，使用if和switch都可以，习惯上使用switch更多。因为<code>效率稍高</code>​。当条件是区间范围的判断时，只能使用if语句。</li>
+<li class="lvl-6">使用switch可以利用<code>穿透性</code>​，同时执行多个分支，而if…else没有穿透性。</li>
 </ul>
 </li>
 </ul>
-<h4 id="3-1-for循环"><a href="#3-1-for循环" class="headerlink" title="3.1 for循环"></a>3.1 for循环</h4><ul>
-<li>基本语法：</li>
-<li><p>语法格式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (①初始化部分; ②循环条件部分; ④迭代部分)｛</span><br><span class="line">         	③循环体部分;</span><br><span class="line">｝</span><br></pre></td></tr></table></figure></li>
-<li><strong>执行过程：</strong> ①-②-③-④-②-③-④-②-③-④-…..-②</li>
-<li><p>图示</p>
+</li>
+</ul>
+<h2 id="3-循环语句">3. 循环语句</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>理解：循环语句具有在某些条件下满足的情况下 ，反复执行特定代码的功能</p>
+</li>
+<li class="lvl-2">
+<p>循环结构分类：</p>
+<ul class="lvl-2">
+<li class="lvl-4">for循环</li>
+<li class="lvl-4">while循环</li>
+<li class="lvl-4">do-while循环</li>
+</ul>
+</li>
+<li class="lvl-2">
+<p>循环结构四要素</p>
+<ul class="lvl-2">
+<li class="lvl-4">初始部分</li>
+<li class="lvl-4">循环条件部分</li>
+<li class="lvl-4">循环体部分</li>
+<li class="lvl-4">迭代部分</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-1-for循环">3.1 for循环</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>基本语法：</p>
+</li>
+<li class="lvl-2">
+<p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (①初始化部分; ②循环条件部分; ④迭代部分)｛</span><br><span class="line">         	③循环体部分;</span><br><span class="line">｝</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-2">
+<p><strong>执行过程：</strong> ①-②-③-④-②-③-④-②-③-④-…-②</p>
+</li>
+<li class="lvl-2">
+<p>图示</p>
 <p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20240116121208-l5klzbz.png" alt="image"></p>
 </li>
-<li><p>说明：</p>
-<ul>
-<li>for(;;)中的两个；不能多也不能少</li>
-<li>①初始化部分可以声明多个变量，但必须是同一个类型，用逗号分隔</li>
-<li>②循环条件部分为boolean类型表达式，当值为false时，退出循环</li>
-<li>④可以有多个变量更新，用逗号分隔</li>
+<li class="lvl-2">
+<p>说明：</p>
+<ul class="lvl-2">
+<li class="lvl-4">for(;;)中的两个；不能多也不能少</li>
+<li class="lvl-4">①初始化部分可以声明多个变量，但必须是同一个类型，用逗号分隔</li>
+<li class="lvl-4">②循环条件部分为boolean类型表达式，当值为false时，退出循环</li>
+<li class="lvl-4">④可以有多个变量更新，用逗号分隔</li>
 </ul>
 </li>
 </ul>
-<h4 id="3-2-while-循环"><a href="#3-2-while-循环" class="headerlink" title="3.2 while 循环"></a>3.2 while 循环</h4><ul>
-<li><p>基本语法</p>
-<ul>
-<li><p>语法格式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">①初始化部分</span><br><span class="line"><span class="keyword">while</span>(②循环条件部分)｛</span><br><span class="line">    ③循环体部分;</span><br><span class="line">    ④迭代部分;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><strong>执行过程：</strong> ①-②-③-④-②-③-④-②-③-④-…-②</li>
-<li><p>图示：</p>
+<h4 id="3-2-while-循环">3.2 while 循环</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>基本语法</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">①初始化部分</span><br><span class="line"><span class="keyword">while</span>(②循环条件部分)｛</span><br><span class="line">    ③循环体部分;</span><br><span class="line">    ④迭代部分;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-4">
+<p><strong>执行过程：</strong> ①-②-③-④-②-③-④-②-③-④-…-②</p>
+</li>
+<li class="lvl-4">
+<p>图示：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20240116122000-1xvk6bl.png" alt="image"></p>
 </li>
-<li><p>说明：</p>
-<ul>
-<li>while(循环条件)中循环条件必须是boolean类型。</li>
-<li>注意不要忘记声明④迭代部分。否则，循环将不能结束，变成死循环。</li>
-<li>for循环和while循环可以相互转换。二者没有性能上的差别。实际开发中，根据具体结构的情况，选择哪个格式更合适、美观。</li>
-<li>for循环与while循环的区别：初始化条件部分的作用域不同。</li>
+<li class="lvl-4">
+<p>说明：</p>
+<ul class="lvl-4">
+<li class="lvl-6">while(循环条件)中循环条件必须是boolean类型。</li>
+<li class="lvl-6">注意不要忘记声明④迭代部分。否则，循环将不能结束，变成死循环。</li>
+<li class="lvl-6">for循环和while循环可以相互转换。二者没有性能上的差别。实际开发中，根据具体结构的情况，选择哪个格式更合适、美观。</li>
+<li class="lvl-6">for循环与while循环的区别：初始化条件部分的作用域不同。</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h4 id="3-3-do-while-循环"><a href="#3-3-do-while-循环" class="headerlink" title="3.3 do-while 循环"></a>3.3 do-while 循环</h4><ul>
-<li><p>基本语法</p>
-<ul>
-<li><p>语法格式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">①初始化部分;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	③循环体部分</span><br><span class="line">	④迭代部分</span><br><span class="line">&#125;<span class="keyword">while</span>(②循环条件部分); </span><br></pre></td></tr></table></figure></li>
-<li>执行过程：①-③-④-②-③-④-②-③-④-…-②</li>
-<li><p>图示：</p>
+<h4 id="3-3-do-while-循环">3.3 do-while 循环</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>基本语法</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">①初始化部分;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	③循环体部分</span><br><span class="line">	④迭代部分</span><br><span class="line">&#125;<span class="keyword">while</span>(②循环条件部分); </span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-4">
+<p>执行过程：①-③-④-②-③-④-②-③-④-…-②</p>
+</li>
+<li class="lvl-4">
+<p>图示：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20240117112328-8c3hhrd.png" alt="image"></p>
 </li>
-<li><p>说明：</p>
-<ul>
-<li>结尾while(循环条件)中循环条件必须是boolean类型</li>
-<li>do{}while();最后有一个分号</li>
-<li>do-while结构的循环体语句是至少会执行一次，这个和for和while是不一样的</li>
-<li>循环的三个结构for、while、do-while三者是可以相互转换的。</li>
+<li class="lvl-4">
+<p>说明：</p>
+<ul class="lvl-4">
+<li class="lvl-6">结尾while(循环条件)中循环条件必须是boolean类型</li>
+<li class="lvl-6">do{}while();最后有一个分号</li>
+<li class="lvl-6">do-while结构的循环体语句是至少会执行一次，这个和for和while是不一样的</li>
+<li class="lvl-6">循环的三个结构for、while、do-while三者是可以相互转换的。</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h4 id="3-4-对比三种循环结构"><a href="#3-4-对比三种循环结构" class="headerlink" title="3.4 对比三种循环结构"></a>3.4 对比三种循环结构</h4><ul>
-<li><p><strong>三种循环结构都具有四个要素：</strong></p>
-<ul>
-<li>循环变量的初始化条件</li>
-<li>循环条件</li>
-<li>循环体语句块</li>
-<li>循环变量的修改的迭代表达式</li>
+<h4 id="3-4-对比三种循环结构">3.4 对比三种循环结构</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>三种循环结构都具有四个要素：</strong></p>
+<ul class="lvl-2">
+<li class="lvl-4">循环变量的初始化条件</li>
+<li class="lvl-4">循环条件</li>
+<li class="lvl-4">循环体语句块</li>
+<li class="lvl-4">循环变量的修改的迭代表达式</li>
 </ul>
 </li>
-<li><p><strong>从循环次数角度分析</strong></p>
-<ul>
-<li>do-while循环至少执行一次循环体语句。</li>
-<li>for和while循环先判断循环条件语句是否成立，然后决定是否执行循环体。</li>
+<li class="lvl-2">
+<p><strong>从循环次数角度分析</strong></p>
+<ul class="lvl-2">
+<li class="lvl-4">do-while循环至少执行一次循环体语句。</li>
+<li class="lvl-4">for和while循环先判断循环条件语句是否成立，然后决定是否执行循环体。</li>
 </ul>
 </li>
-<li><p><strong>如何选择</strong></p>
-<ul>
-<li>遍历有明显的循环次数（范围）的需求，选择for循环</li>
-<li>遍历没有明显的循环次数（范围）的需求，选择while循环</li>
-<li>如果循环体语句块至少执行一次，可以考虑使用do-while循环</li>
-<li>本质上：三种循环之间完全可以互相转换，都能实现循环的功能</li>
-</ul>
-</li>
-</ul>
-<h4 id="3-5-无限循环"><a href="#3-5-无限循环" class="headerlink" title="3.5 无限循环"></a>3.5 无限循环</h4><ul>
-<li><p>基本语法</p>
-<ul>
-<li>语法格式：最简单的无限循环格式：==while(true) , for( ; ;)==​</li>
-<li><p>适用场景</p>
-<ul>
-<li>开发中，有时并不确定需要循环多少次，需要根据循环体内部某些条件，来控制循环的结束（使用break）。</li>
-<li>如果此循环结构不能终止，则构成了死循环！开发中要避免出现死循环。</li>
+<li class="lvl-2">
+<p><strong>如何选择</strong></p>
+<ul class="lvl-2">
+<li class="lvl-4">遍历有明显的循环次数（范围）的需求，选择for循环</li>
+<li class="lvl-4">遍历没有明显的循环次数（范围）的需求，选择while循环</li>
+<li class="lvl-4">如果循环体语句块至少执行一次，可以考虑使用do-while循环</li>
+<li class="lvl-4">本质上：三种循环之间完全可以互相转换，都能实现循环的功能</li>
 </ul>
 </li>
 </ul>
+<h4 id="3-5-无限循环">3.5 无限循环</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>基本语法</p>
+<ul class="lvl-2">
+<li class="lvl-4">
+<p>语法格式：最简单的无限循环格式：==while(true) , for( ; ;)==​</p>
+</li>
+<li class="lvl-4">
+<p>适用场景</p>
+<ul class="lvl-4">
+<li class="lvl-6">开发中，有时并不确定需要循环多少次，需要根据循环体内部某些条件，来控制循环的结束（使用break）。</li>
+<li class="lvl-6">如果此循环结构不能终止，则构成了死循环！开发中要避免出现死循环。</li>
+</ul>
 </li>
 </ul>
-<h4 id="3-6-嵌套循环"><a href="#3-6-嵌套循环" class="headerlink" title="3.6 嵌套循环"></a>3.6 嵌套循环</h4><ul>
-<li><p><strong>所谓嵌套循环</strong>，是指一个循环结构A的循环体是另一个循环结构B。比如，for循环里面还有一个for循环，就是嵌套循环。其中，for ,while ,do-while均可以作为外层循环或内层循环。</p>
-<ul>
-<li>外层循环：循环结构A</li>
-<li>内层循环：循环结构B</li>
+</li>
+</ul>
+<h4 id="3-6-嵌套循环">3.6 嵌套循环</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>所谓嵌套循环</strong>，是指一个循环结构A的循环体是另一个循环结构B。比如，for循环里面还有一个for循环，就是嵌套循环。其中，for ,while ,do-while均可以作为外层循环或内层循环。</p>
+<ul class="lvl-2">
+<li class="lvl-4">外层循环：循环结构A</li>
+<li class="lvl-4">内层循环：循环结构B</li>
 </ul>
 </li>
-<li>实质上，<code>嵌套循环就是把内层循环当成外层循环的循环体</code>​。只有当内层循环的循环条件为false时，才会完全跳出内层循环，才可结束外层的当次循环，开始下一次的外层循环。</li>
-<li>设外层循环次数为<code>m</code>​次，内层为<code>n</code>​次，则内层循环体实际上需要执行<code>m*n</code>​次。</li>
-<li><strong>技巧：</strong> 从二维图形的角度看，外层循环控制<code>行数</code>​，内层循环控制<code>列数</code>​。</li>
-<li><strong>开发经验：</strong> 实际开发中，我们最多见到的嵌套循环是两层。一般不会出现超过三层的嵌套循环。如果将要出现，一定要停下来重新梳理业务逻辑，重新思考算法的实现，控制在三层以内。否则，可读性会很差。</li>
+<li class="lvl-2">
+<p>实质上，<code>嵌套循环就是把内层循环当成外层循环的循环体</code>​。只有当内层循环的循环条件为false时，才会完全跳出内层循环，才可结束外层的当次循环，开始下一次的外层循环。</p>
+</li>
+<li class="lvl-2">
+<p>设外层循环次数为<code>m</code>​次，内层为<code>n</code>​次，则内层循环体实际上需要执行<code>m*n</code>​次。</p>
+</li>
+<li class="lvl-2">
+<p><strong>技巧：</strong> 从二维图形的角度看，外层循环控制<code>行数</code>​，内层循环控制<code>列数</code>​。</p>
+</li>
+<li class="lvl-2">
+<p><strong>开发经验：</strong> 实际开发中，我们最多见到的嵌套循环是两层。一般不会出现超过三层的嵌套循环。如果将要出现，一定要停下来重新梳理业务逻辑，重新思考算法的实现，控制在三层以内。否则，可读性会很差。</p>
+</li>
 </ul>
-<h2 id="4-关键字break-和-coutinue-的使用"><a href="#4-关键字break-和-coutinue-的使用" class="headerlink" title="4. 关键字break 和 coutinue 的使用"></a>4. 关键字break 和 coutinue 的使用</h2><div class="table-container">
+<h2 id="4-关键字break-和-coutinue-的使用">4. 关键字break 和 coutinue 的使用</h2>
 <table>
 <thead>
 <tr>
@@ -388,28 +478,32 @@
 </tr>
 </tbody>
 </table>
-</div>
 <blockquote>
 <p>此外，很多语言都有goto语句，goto语句可以随意将控制转移到程序中的任意一条语句上，然后执行它，但使程序容易出错。Java中的break和continue是不同于goto的。</p>
 </blockquote>
-<h2 id="5-Scanner-键盘输入功能的实现"><a href="#5-Scanner-键盘输入功能的实现" class="headerlink" title="5. Scanner: 键盘输入功能的实现"></a>5. Scanner: 键盘输入功能的实现</h2><ul>
-<li><p>键盘输入代码的四个步骤</p>
+<h2 id="5-Scanner-键盘输入功能的实现">5. Scanner: 键盘输入功能的实现</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>键盘输入代码的四个步骤</p>
 <ol>
-<li>导包：<code>import java.util.Scanner;</code>​</li>
-<li>创建Scanner类型的对象：<code>Scanner scan = new Scanner(System.in);</code>​</li>
-<li>调用Scanner类的相关方法（<code>next() / nextXxx()</code>​），来获取指定类型的变量</li>
-<li>释放资源：<code>scan.close();</code>​</li>
+<li class="lvl-5">导包：<code>import java.util.Scanner;</code>​</li>
+<li class="lvl-5">创建Scanner类型的对象：<code>Scanner scan = new Scanner(System.in);</code>​</li>
+<li class="lvl-5">调用Scanner类的相关方法（<code>next() / nextXxx()</code>​），来获取指定类型的变量</li>
+<li class="lvl-5">释放资源：<code>scan.close();</code>​</li>
 </ol>
 </li>
-<li>注意：需要根据相应的方法，来输入指定类型的值 ，如果输入的数据类型与要求的类型不匹配时 ，会报异常导致程序终止</li>
+<li class="lvl-2">
+<p>注意：需要根据相应的方法，来输入指定类型的值 ，如果输入的数据类型与要求的类型不匹配时 ，会报异常导致程序终止</p>
+</li>
 </ul>
 <p>获取随机数代码演示：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathRandomTest</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">double</span> <span class="variable">value</span> <span class="operator">=</span> Math.random();</span><br><span class="line">		System.out.println(value);</span><br><span class="line"></span><br><span class="line">		<span class="comment">//[1,6]</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> (<span class="type">int</span>)(Math.random() * <span class="number">6</span>) + <span class="number">1</span>; <span class="comment">//</span></span><br><span class="line">		System.out.println(number);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="6-谷粒记账"><a href="#6-谷粒记账" class="headerlink" title="6. 谷粒记账"></a>6. 谷粒记账</h2><p>应用类：NorthAccount</p>
+<h2 id="6-谷粒记账">6. 谷粒记账</h2>
+<p>应用类：NorthAccount</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.north;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Stone</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2024/1/17$</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@SuppressWarnings(&quot;all&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NorthAccount</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="type">String</span> <span class="variable">details</span> <span class="operator">=</span> <span class="string">&quot;收支\t 账户金额\t 收支金额\t 说明\n&quot;</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">acount</span> <span class="operator">=</span> <span class="number">10000</span>;</span><br><span class="line">        <span class="keyword">while</span> (flag) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;-------------------------------谷粒记账软件-----------------------------------&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;                                1.收支明细                                    &quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;                                2.登记收入                                    &quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;                                3.登记支出                                    &quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;                                4.退出 \n                                      &quot;</span>);</span><br><span class="line">            System.out.print(<span class="string">&quot;                                请选择(1-4):&quot;</span>);</span><br><span class="line">            <span class="type">char</span> <span class="variable">selection</span> <span class="operator">=</span> Utility.readMenuSelection(); <span class="comment">// 进行选择</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">switch</span> (selection) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    System.out.println(<span class="string">&quot;-------------------------当前手指明细记录-------------------------------&quot;</span>);</span><br><span class="line">                    System.out.println(<span class="string">&quot;-----------------------------------------------------------------------&quot;</span>);</span><br><span class="line">                    System.out.println(details);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    System.out.print(<span class="string">&quot;本次输入金额：&quot;</span>);</span><br><span class="line">                    <span class="type">int</span> <span class="variable">amount1</span> <span class="operator">=</span> Utility.readNumber();</span><br><span class="line">                    System.out.print(<span class="string">&quot;本次收入说明：&quot;</span>);</span><br><span class="line">                    <span class="type">String</span> <span class="variable">desc1</span> <span class="operator">=</span> Utility.readString();</span><br><span class="line"></span><br><span class="line">                    acount += amount1;</span><br><span class="line">                    details += <span class="string">&quot;收入\t&quot;</span> + acount + <span class="string">&quot;\t\t&quot;</span> + amount1 + <span class="string">&quot;\t\t&quot;</span> + desc1 + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    System.out.print(<span class="string">&quot;本次支出金额：&quot;</span>);</span><br><span class="line">                    <span class="type">int</span> <span class="variable">amount2</span> <span class="operator">=</span> Utility.readNumber();</span><br><span class="line">                    System.out.print(<span class="string">&quot;本次支出说明：&quot;</span>);</span><br><span class="line">                    <span class="type">String</span> <span class="variable">desc2</span> <span class="operator">=</span> Utility.readString();</span><br><span class="line"></span><br><span class="line">                    acount -= amount2;</span><br><span class="line">                    details += <span class="string">&quot;支出\t&quot;</span> + acount + <span class="string">&quot;\t\t&quot;</span> + amount2 + <span class="string">&quot;\t\t&quot;</span> + desc2 + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    System.out.print(<span class="string">&quot;确认是否退出(Y/N): &quot;</span>);</span><br><span class="line">                    <span class="type">char</span> <span class="variable">confirmSelection</span> <span class="operator">=</span> Utility.readConfirmSelection();</span><br><span class="line">                    <span class="keyword">if</span> (confirmSelection == <span class="string">&#x27;Y&#x27;</span>)&#123;</span><br><span class="line">                        flag = <span class="literal">false</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>工具类：Utility</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.north;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Stone</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2024/1/17$</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@SuppressWarnings(&quot;all&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Utility</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     用于界面菜单的选择。该方法读取键盘，如果用户键入’1’-’4’中的任意字符，则方法返回。返回值为用户键入字符。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">char</span> <span class="title function_">readMenuSelection</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">char</span> c;</span><br><span class="line">        <span class="keyword">for</span> (; ; ) &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> readKeyBoard(<span class="number">1</span>);</span><br><span class="line">            c = str.charAt(<span class="number">0</span>);</span><br><span class="line">            <span class="keyword">if</span> (c != <span class="string">&#x27;1&#x27;</span> &amp;&amp; c != <span class="string">&#x27;2&#x27;</span> &amp;&amp; c != <span class="string">&#x27;3&#x27;</span> &amp;&amp; c != <span class="string">&#x27;4&#x27;</span>) &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;选择错误，请重新输入：&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     用于收入和支出金额的输入。该方法从键盘读取一个不超过4位长度的整数，并将其作为方法的返回值。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">readNumber</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> n;</span><br><span class="line">        <span class="keyword">for</span> (; ; ) &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> readKeyBoard(<span class="number">4</span>);</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                n = Integer.parseInt(str);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125; <span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;数字输入错误，请重新输入：&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> n;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     用于收入和支出说明的输入。该方法从键盘读取一个不超过8位长度的字符串，并将其作为方法的返回值。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">readString</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> readKeyBoard(<span class="number">8</span>);</span><br><span class="line">        <span class="keyword">return</span> str;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     用于确认选择的输入。该方法从键盘读取‘Y’或’N’，并将其作为方法的返回值。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">char</span> <span class="title function_">readConfirmSelection</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">char</span> c;</span><br><span class="line">        <span class="keyword">for</span> (; ; ) &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> readKeyBoard(<span class="number">1</span>).toUpperCase();</span><br><span class="line">            c = str.charAt(<span class="number">0</span>);</span><br><span class="line">            <span class="keyword">if</span> (c == <span class="string">&#x27;Y&#x27;</span> || c == <span class="string">&#x27;N&#x27;</span>) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;选择错误，请重新输入：&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">readKeyBoard</span><span class="params">(<span class="type">int</span> limit)</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">line</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (scanner.hasNext()) &#123;</span><br><span class="line">            line = scanner.nextLine();</span><br><span class="line">            <span class="keyword">if</span> (line.length() &lt; <span class="number">1</span> || line.length() &gt; limit) &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;输入长度（不大于&quot;</span> + limit + <span class="string">&quot;）错误，请重新输入：&quot;</span>);</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> line;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>第三章：流程控制语句</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://northpoet.github.io/posts/1fcb7e57.html">https://northpoet.github.io/posts/1fcb7e57.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>捞月亮の小北</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2024-07-18</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2024-07-27</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaSE/">JavaSE</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-l8vp7y.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/a9867134.html" title="第四章：数组"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-jxl31y-20240119141212-y4vupt3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">第四章：数组</div></div></a></div><div class="next-post pull-right"><a href="/posts/28b3fa6.html" title="第二章：变量与运算符"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-vqvzzp.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">第二章：变量与运算符</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/f7c947df.html" title="第一章：Java语言概述"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-p9vjq9.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-17</div><div class="title">第一章：Java语言概述</div></div></a></div><div><a href="/posts/28b3fa6.html" title="第二章：变量与运算符"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-vqvzzp.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-17</div><div class="title">第二章：变量与运算符</div></div></a></div><div><a href="/posts/aa351366.html" title="第五章：面向对象编程"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-7poj6e-20240202213535-pv6wlwq.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-18</div><div class="title">第五章：面向对象编程</div></div></a></div><div><a href="/posts/b492def1.html" title="第六章：异常"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/1.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-18</div><div class="title">第六章：异常</div></div></a></div><div><a href="/posts/3e69d26.html" title="1.Java语言概述"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/2942345-20230827115413401-749802798.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-27</div><div class="title">1.Java语言概述</div></div></a></div><div><a href="/posts/a9867134.html" title="第四章：数组"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-jxl31y-20240119141212-y4vupt3.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-18</div><div class="title">第四章：数组</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="card-info-avatar"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div><div class="author-info__name">捞月亮の小北</div><div class="author-info__description">言念君子 ，温其如玉</div></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/NorthPoet"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">吾心安处即吾乡,吾乡何处不可眠</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9A%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5"><span class="toc-text">第三章：流程控制语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-text">1. 顺序结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">2. 分支语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-if-else-%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E7%BB%93%E6%9E%84"><span class="toc-text">2.1 if-else 条件判断结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-if%E2%80%A6else-%E5%B5%8C%E5%A5%97"><span class="toc-text">2.2 if…else 嵌套</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-switch-case-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84"><span class="toc-text">2.3 switch-case 选择结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-if-else-%E8%AF%AD%E5%8F%A5%E4%B8%8Eswitch-case%E8%AF%AD%E5%8F%A5%E6%AF%94%E8%BE%83"><span class="toc-text">2.4 if-else 语句与switch-case语句比较</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">3. 循环语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-for%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.1 for循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-while-%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.2 while 循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-do-while-%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.3 do-while 循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-%E5%AF%B9%E6%AF%94%E4%B8%89%E7%A7%8D%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-text">3.4 对比三种循环结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.5 无限循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.6 嵌套循环</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%85%B3%E9%94%AE%E5%AD%97break-%E5%92%8C-coutinue-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">4. 关键字break 和 coutinue 的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Scanner-%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-text">5. Scanner: 键盘输入功能的实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E8%B0%B7%E7%B2%92%E8%AE%B0%E8%B4%A6"><span class="toc-text">6. 谷粒记账</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/8fd19ba2.html" title="秒杀优化-基于阻塞队列实现秒杀优化"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-expxmw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="秒杀优化-基于阻塞队列实现秒杀优化"/></a><div class="content"><a class="title" href="/posts/8fd19ba2.html" title="秒杀优化-基于阻塞队列实现秒杀优化">秒杀优化-基于阻塞队列实现秒杀优化</a><time datetime="2024-07-27T03:00:16.000Z" title="发表于 2024-07-27 11:00:16">2024-07-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5c81b531.html" title="大事件"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-gpxxq7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="大事件"/></a><div class="content"><a class="title" href="/posts/5c81b531.html" title="大事件">大事件</a><time datetime="2024-07-23T08:11:57.000Z" title="发表于 2024-07-23 16:11:57">2024-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/facab7a2.html" title="我在人间凑数的日子"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/x-12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我在人间凑数的日子"/></a><div class="content"><a class="title" href="/posts/facab7a2.html" title="我在人间凑数的日子">我在人间凑数的日子</a><time datetime="2024-07-19T23:56:57.000Z" title="发表于 2024-07-20 07:56:57">2024-07-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5413be0e.html" title="健身日记"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/a-13.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="健身日记"/></a><div class="content"><a class="title" href="/posts/5413be0e.html" title="健身日记">健身日记</a><time datetime="2024-07-18T09:43:20.000Z" title="发表于 2024-07-18 17:43:20">2024-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/a6b15897.html" title="Redis实战篇"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/x-6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis实战篇"/></a><div class="content"><a class="title" href="/posts/a6b15897.html" title="Redis实战篇">Redis实战篇</a><time datetime="2024-07-18T08:50:21.000Z" title="发表于 2024-07-18 16:50:21">2024-07-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 捞月亮の小北</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>第三章：流程控制语句</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://northpoet.github.io/posts/1fcb7e57.html">https://northpoet.github.io/posts/1fcb7e57.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>捞月亮の小北</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2024-07-18</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2024-07-27</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaSE/">JavaSE</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-l8vp7y.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/a9867134.html" title="第四章：数组"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-jxl31y-20240119141212-y4vupt3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">第四章：数组</div></div></a></div><div class="next-post pull-right"><a href="/posts/28b3fa6.html" title="第二章：变量与运算符"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-vqvzzp.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">第二章：变量与运算符</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/f7c947df.html" title="第一章：Java语言概述"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-p9vjq9.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-17</div><div class="title">第一章：Java语言概述</div></div></a></div><div><a href="/posts/28b3fa6.html" title="第二章：变量与运算符"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-vqvzzp.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-17</div><div class="title">第二章：变量与运算符</div></div></a></div><div><a href="/posts/b492def1.html" title="第六章：异常"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/1.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-18</div><div class="title">第六章：异常</div></div></a></div><div><a href="/posts/aa351366.html" title="第五章：面向对象编程"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-7poj6e-20240202213535-pv6wlwq.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-18</div><div class="title">第五章：面向对象编程</div></div></a></div><div><a href="/posts/3e69d26.html" title="1.Java语言概述"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/2942345-20230827115413401-749802798.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-27</div><div class="title">1.Java语言概述</div></div></a></div><div><a href="/posts/cca6755e.html" title="2.变量与运算符"><img class="cover" src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-qzmlo7.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-27</div><div class="title">2.变量与运算符</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="card-info-avatar"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div><div class="author-info__name">捞月亮の小北</div><div class="author-info__description">言念君子 ，温其如玉</div></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/NorthPoet"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">吾心安处即吾乡,吾乡何处不可眠</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">第三章：流程控制语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-text">1. 顺序结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">2. 分支语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-span-data-type-text-style-color-var-b3-font-color2-if-else-%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E7%BB%93%E6%9E%84-span"><span class="toc-text">2.1 if-else 条件判断结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-span-data-type-text-style-color-var-b3-font-color2-if%E2%80%A6else-%E5%B5%8C%E5%A5%97-span"><span class="toc-text">2.2 if…else 嵌套</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-switch-case-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84"><span class="toc-text">2.3 switch-case 选择结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-if-else-%E8%AF%AD%E5%8F%A5%E4%B8%8Eswitch-case%E8%AF%AD%E5%8F%A5%E6%AF%94%E8%BE%83"><span class="toc-text">2.4 if-else 语句与switch-case语句比较</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">3. 循环语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-for%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.1 for循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-while-%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.2 while 循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-do-while-%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.3 do-while 循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-%E5%AF%B9%E6%AF%94%E4%B8%89%E7%A7%8D%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-text">3.4 对比三种循环结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.5 无限循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF"><span class="toc-text">3.6 嵌套循环</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%85%B3%E9%94%AE%E5%AD%97break-%E5%92%8C-coutinue-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">4. 关键字break 和 coutinue 的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Scanner-%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-text">5. Scanner: 键盘输入功能的实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E8%B0%B7%E7%B2%92%E8%AE%B0%E8%B4%A6"><span class="toc-text">6. 谷粒记账</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/8fd19ba2.html" title="秒杀优化-基于阻塞队列实现秒杀优化"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-expxmw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="秒杀优化-基于阻塞队列实现秒杀优化"/></a><div class="content"><a class="title" href="/posts/8fd19ba2.html" title="秒杀优化-基于阻塞队列实现秒杀优化">秒杀优化-基于阻塞队列实现秒杀优化</a><time datetime="2024-07-27T03:00:16.000Z" title="发表于 2024-07-27 11:00:16">2024-07-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5c81b531.html" title="大事件"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/wallhaven-gpxxq7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="大事件"/></a><div class="content"><a class="title" href="/posts/5c81b531.html" title="大事件">大事件</a><time datetime="2024-07-23T08:11:57.000Z" title="发表于 2024-07-23 16:11:57">2024-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/facab7a2.html" title="我在人间凑数的日子"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/x-12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我在人间凑数的日子"/></a><div class="content"><a class="title" href="/posts/facab7a2.html" title="我在人间凑数的日子">我在人间凑数的日子</a><time datetime="2024-07-19T23:56:57.000Z" title="发表于 2024-07-20 07:56:57">2024-07-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5413be0e.html" title="健身日记"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/a-13.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="健身日记"/></a><div class="content"><a class="title" href="/posts/5413be0e.html" title="健身日记">健身日记</a><time datetime="2024-07-18T09:43:20.000Z" title="发表于 2024-07-18 17:43:20">2024-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/a6b15897.html" title="Redis实战篇"><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/x-6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis实战篇"/></a><div class="content"><a class="title" href="/posts/a6b15897.html" title="Redis实战篇">Redis实战篇</a><time datetime="2024-07-18T08:50:21.000Z" title="发表于 2024-07-18 16:50:21">2024-07-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 捞月亮の小北</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
   const initGitalk = () => {
     const gitalk = new Gitalk(Object.assign({
       clientID: 'Ov23liH3xSwqydS0B0nh',
