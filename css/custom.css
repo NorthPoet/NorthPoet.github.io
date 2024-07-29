@@ -715,6 +715,7 @@ div#category {
   padding: 10px 17px;
   font-size: 16px;
   margin: 5px;
+  font-family: 'HarmonyOS_Sans_SC_Medium' !important;
 }
 
 /* 全局宽度 */

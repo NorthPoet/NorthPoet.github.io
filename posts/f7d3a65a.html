@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Java复习 | 捞月亮の小北</title><meta name="author" content="捞月亮の小北"><meta name="copyright" content="捞月亮の小北"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="第一章 ： Java开发入门   Java语言是一种面向对象的语言   Java语言的特点有： 面向对象 ， 跨平台性 ， 安全性 ，支持多线程和分布式   将.java源文件编译为.class文件的命令是： JavaC   Java程序的运行环境为 ： JRE   简述Java语言的特点  简单性 ， 面向对象 ， 安全性 ， 跨平台性 ， 支持多线程 ， 分布性    简述Java的运行机制">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Java复习 | 捞月亮の小北</title><meta name="author" content="捞月亮の小北"><meta name="copyright" content="捞月亮の小北"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="第一章 ： Java开发入门 Java语言是一种面向对象的语言 Java语言的特点有： 面向对象 ， 跨平台性 ， 安全性 ，支持多线程和分布式 将.java源文件编译为.class文件的命令是： JavaC Java程序的运行环境为 ： JRE 简述Java语言的特点  简单性 ， 面向对象 ， 安全性 ， 跨平台性 ， 支持多线程 ， 分布性   简述Java的运行机制  Java程序运行时">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java复习">
 <meta property="og:url" content="https://northpoet.github.io/posts/f7d3a65a.html">
 <meta property="og:site_name" content="捞月亮の小北">
-<meta property="og:description" content="第一章 ： Java开发入门   Java语言是一种面向对象的语言   Java语言的特点有： 面向对象 ， 跨平台性 ， 安全性 ，支持多线程和分布式   将.java源文件编译为.class文件的命令是： JavaC   Java程序的运行环境为 ： JRE   简述Java语言的特点  简单性 ， 面向对象 ， 安全性 ， 跨平台性 ， 支持多线程 ， 分布性    简述Java的运行机制">
+<meta property="og:description" content="第一章 ： Java开发入门 Java语言是一种面向对象的语言 Java语言的特点有： 面向对象 ， 跨平台性 ， 安全性 ，支持多线程和分布式 将.java源文件编译为.class文件的命令是： JavaC Java程序的运行环境为 ： JRE 简述Java语言的特点  简单性 ， 面向对象 ， 安全性 ， 跨平台性 ， 支持多线程 ， 分布性   简述Java的运行机制  Java程序运行时">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/1.webp">
 <meta property="article:published_time" content="2023-12-22T09:40:08.000Z">
@@ -156,185 +156,85 @@
     })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
 <style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
   white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
-<link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">50</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/NorthPoet/images/images/1.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="捞月亮の小北"><span class="site-name">捞月亮の小北</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java复习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-22T09:40:08.000Z" title="发表于 2023-12-22 17:40:08">2023-12-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-18T09:47:22.058Z" title="更新于 2024-07-18 17:47:22">2024-07-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java复习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="第一章-：-Java开发入门">第一章 ： Java开发入门</h2>
-<ol>
-<li class="lvl-3">
-<p>Java语言是一种面向对象的语言</p>
-</li>
-<li class="lvl-3">
-<p>Java语言的特点有： 面向对象 ， 跨平台性 ， 安全性 ，支持多线程和分布式</p>
-</li>
-<li class="lvl-3">
-<p>将.java源文件编译为.class文件的命令是： JavaC</p>
-</li>
-<li class="lvl-3">
-<p>Java程序的运行环境为 ： JRE</p>
-</li>
-<li class="lvl-3">
-<p>简述Java语言的特点</p>
+<link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">50</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/NorthPoet/images/images/1.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="捞月亮の小北"><span class="site-name">捞月亮の小北</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/chat/"><i class="fa-fw fas fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java复习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-22T09:40:08.000Z" title="发表于 2023-12-22 17:40:08">2023-12-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-18T09:47:22.058Z" title="更新于 2024-07-18 17:47:22">2024-07-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java复习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="第一章-：-Java开发入门"><a href="#第一章-：-Java开发入门" class="headerlink" title="第一章 ： Java开发入门"></a>第一章 ： Java开发入门</h2><ol>
+<li>Java语言是一种面向对象的语言</li>
+<li>Java语言的特点有： 面向对象 ， 跨平台性 ， 安全性 ，支持多线程和分布式</li>
+<li>将.java源文件编译为.class文件的命令是： JavaC</li>
+<li>Java程序的运行环境为 ： JRE</li>
+<li><p>简述Java语言的特点</p>
 <blockquote>
 <p>简单性 ， 面向对象 ， 安全性 ， 跨平台性 ， 支持多线程 ， 分布性</p>
 </blockquote>
 </li>
-<li class="lvl-3">
-<p>简述Java的运行机制</p>
+<li><p>简述Java的运行机制</p>
 <blockquote>
 <p>Java程序运行时 ， 必须经过编译和运行两个步骤 ， 首先将后缀名为 .java的源文件进行编译 ， 生成后缀名为 .class 的字节码文件 ， 然后Java虚拟机将字节码文件进行解释执行 ，并将结果运行出来</p>
 </blockquote>
 </li>
-<li class="lvl-3">
-<p>编写一个Hello World 程序</p>
+<li><p>编写一个Hello World 程序</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="第二章-：-Java编程基础">第二章 ： Java编程基础</h2>
+<h2 id="第二章-：-Java编程基础"><a href="#第二章-：-Java编程基础" class="headerlink" title="第二章 ： Java编程基础"></a>第二章 ： Java编程基础</h2><ol>
+<li>Java中的常量有 ： 整形常量 ， 浮点数常量 ，字符常量 ， 字符串常来那个 ， 布尔常量 ， null常量</li>
+<li>进制转换 （还未看）</li>
+<li><p>变量的数据类型</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231218153955-n95axyq.png" alt="image"></p>
+</li>
+<li><p>变量的自动类型转换</p>
 <ol>
-<li class="lvl-3">
-<p>Java中的常量有 ： 整形常量 ， 浮点数常量 ，字符常量 ， 字符串常来那个 ， 布尔常量 ， null常量</p>
-</li>
-<li class="lvl-3">
-<p>进制转换 （还未看）</p>
-</li>
-<li class="lvl-3">
-<p>变量的数据类型</p>
-<p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231218153955-n95axyq.png" alt="image"></p>
-</li>
-<li class="lvl-3">
-<p>变量的自动类型转换</p>
-<ol>
-<li class="lvl-7">自动类型转换 (小的往大的转换)</li>
-<li class="lvl-7">强制类型转换</li>
+<li>自动类型转换 (小的往大的转换)</li>
+<li>强制类型转换</li>
 </ol>
 </li>
-<li class="lvl-3">
-<p>Java中的运算符 ： 算术运算符 ， 赋值运算符 ， 比较运算符 ， 逻辑运算符</p>
-</li>
-<li class="lvl-3">
-<p><a href="siyuan://blocks/20230929073410-i2qr594">流程控制语句</a></p>
-</li>
-<li class="lvl-3">
-<p>数组的基本元素 ： 数组名称 ， 数组元素 ， 元素索引 ， 数据类型</p>
-</li>
-<li class="lvl-3">
-<p>Java程序代码必须放在一个类中 ， 类使用 Class 关键词定义</p>
-</li>
-<li class="lvl-3">
-<p>Java中的注释有3类 ， 分别是 单行注释 ， 多行注释 ， 文档注释</p>
-</li>
-<li class="lvl-4">
-<p>int类型所占的存储空间为 ： 4个字节</p>
-</li>
-<li class="lvl-4">
-<p>用于比较两个整数是否相等的运算符是 ： ==</p>
-</li>
-<li class="lvl-4">
-<p>数组是一个容器 ， 存储到数组中的每个元素都有自己的自动编号 ， 最小值为：0</p>
-</li>
-<li class="lvl-4">
-<p>String  不属于基本数据类型</p>
-</li>
-<li class="lvl-4">
-<p>简述Java 中的8中基本数据类型 ， 并说明每种数据类型所占的存储空间大小</p>
+<li>Java中的运算符 ： 算术运算符 ， 赋值运算符 ， 比较运算符 ， 逻辑运算符</li>
+<li><a href="siyuan://blocks/20230929073410-i2qr594">流程控制语句</a></li>
+<li>数组的基本元素 ： 数组名称 ， 数组元素 ， 元素索引 ， 数据类型</li>
+<li>Java程序代码必须放在一个类中 ， 类使用 Class 关键词定义</li>
+<li>Java中的注释有3类 ， 分别是 单行注释 ， 多行注释 ， 文档注释</li>
+<li>int类型所占的存储空间为 ： 4个字节</li>
+<li>用于比较两个整数是否相等的运算符是 ： ==</li>
+<li>数组是一个容器 ， 存储到数组中的每个元素都有自己的自动编号 ， 最小值为：0</li>
+<li>String  不属于基本数据类型</li>
+<li><p>简述Java 中的8中基本数据类型 ， 并说明每种数据类型所占的存储空间大小</p>
 <blockquote>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>所占空间大小</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>byte 字节型</td>
-<td>一个字节</td>
-</tr>
-<tr>
-<td>short 短整型</td>
-<td>2个字节</td>
-</tr>
-<tr>
-<td>int 整形</td>
-<td>4 个字节</td>
-</tr>
-<tr>
-<td>long 长整型</td>
-<td>8 个字节</td>
-</tr>
-<tr>
-<td>float 单精度浮点型</td>
-<td>4 个字节</td>
-</tr>
-<tr>
-<td>double 双精度浮点型</td>
-<td>8 个字节</td>
-</tr>
-<tr>
-<td>char 字符型</td>
-<td>2 个字节</td>
-</tr>
-<tr>
-<td>booblean 型 表示逻辑值</td>
-<td>true , false 分别占一个字节</td>
-</tr>
-</tbody>
-</table>
+<p>|数据类型|所占空间大小|<br>| ————————————| ——————————————-|<br>|byte 字节型|一个字节|<br>|short 短整型|2个字节|<br>|int 整形|4 个字节|<br>|long 长整型|8 个字节|<br>|float 单精度浮点型|4 个字节|<br>|double 双精度浮点型|8 个字节|<br>|char 字符型|2 个字节|<br>|booblean 型 表示逻辑值|true , false 分别占一个字节|</p>
 </blockquote>
 </li>
-<li class="lvl-4">
-<p>简述跳转语句 break 与 continue 的作用和区别</p>
+<li><p>简述跳转语句 break 与 continue 的作用和区别</p>
 <blockquote>
 <p>在Switch 条件语句和循环语句中都可以使用break语句 ， 当它出现在Switch 条件语句中时 ， 作用是终止某个case 并跳出swtich 结构 ， 当它出现在循环语句中 ， 作用是跳出循环语句 ， 执行循环后面的代码 ， continue 语句用在循环语句中 ， 它的作用是终止本次循环 ， 并执行下一次循环</p>
 </blockquote>
 </li>
-<li class="lvl-4">
-<p>编程题</p>
+<li><p>编程题</p>
 <ol>
-<li class="lvl-8">
-<p>编写程序 ，计算 1 + 3 + …+ 99 的值 ， 要求如下：</p>
+<li><p>编写程序 ，计算 1 + 3 + ….+ 99 的值 ， 要求如下：</p>
 <ol>
-<li class="lvl-12">
-<p>使用循环语句实现1\x7e99 的遍历</p>
-</li>
-<li class="lvl-12">
-<p>在遍历过程中 ，通过条件判断当前的数是否为奇数 ， 如果是就累加 ， 否则不加</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ForDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">2</span> != <span class="number">0</span>) &#123;</span><br><span class="line">                sum += i;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(sum);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li>使用循环语句实现1\x7e99 的遍历</li>
+<li><p>在遍历过程中 ，通过条件判断当前的数是否为奇数 ， 如果是就累加 ， 否则不加</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ForDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">2</span> != <span class="number">0</span>) &#123;</span><br><span class="line">                sum += i;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(sum);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
-<li class="lvl-8">
-<p>使用do…while 循环语句计算正数5的阶乘</p>
+<li><p>使用do….while 循环语句计算正数5的阶乘</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DoWhileDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        <span class="type">long</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            sum *= i;</span><br><span class="line">            i ++;</span><br><span class="line">        &#125; <span class="keyword">while</span> (i &lt;= <span class="number">5</span>);</span><br><span class="line">            System.out.println(sum);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="第三章-：面向对象-上">第三章 ：面向对象(上)</h2>
-<ol>
-<li class="lvl-3">
-<p>面向对象的思想 ： 封装性 ， 继承性 ， 多态性</p>
-</li>
-<li class="lvl-3">
-<p>类的定义</p>
+<h2 id="第三章-：面向对象-上"><a href="#第三章-：面向对象-上" class="headerlink" title="第三章 ：面向对象(上)"></a>第三章 ：面向对象(上)</h2><ol>
+<li>面向对象的思想 ： 封装性 ， 继承性 ， 多态性</li>
+<li><p>类的定义</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class 类名 &#123;</span><br><span class="line">	成员变量;</span><br><span class="line">	成员方法;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li class="lvl-3">
-<p>访问控制权限</p>
-<p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231220102158-1s9pblr.png" alt="image"></p>
+<li><p>访问控制权限</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231220102158-1s9pblr.png" alt="image"></p>
 </li>
-<li class="lvl-3">
-<p>一个类可以定义多个构造方法 ， 只要每个构造方法的 参数类型 或 参数个数 不同 ， 即可实现重载</p>
-</li>
-<li class="lvl-3">
-<p>封装就是隐藏对象的属性和实现细节 ，仅对外提供公有的方法</p>
-</li>
-<li class="lvl-3">
-<p>对于声明为 private , protected 及public 的类成员在类外部 ， 都不能访问</p>
-</li>
-<li class="lvl-3">
-<p>简答题：</p>
+<li>一个类可以定义多个构造方法 ， 只要每个构造方法的 参数类型 或 参数个数 不同 ， 即可实现重载</li>
+<li>封装就是隐藏对象的属性和实现细节 ，仅对外提供公有的方法</li>
+<li>对于声明为 private , protected 及public 的类成员在类外部 ， 都不能访问</li>
+<li><p>简答题：</p>
 <ol>
-<li class="lvl-7">
-<p>简述你对面向对象的三大特征的理解</p>
+<li><p>简述你对面向对象的三大特征的理解</p>
 <blockquote>
 <p>面向对象的特点主要可以概括为 封装性 ， 继承性和多态性</p>
 <p>其中封装是面向对象核心思想 ， 将对象的属性和行为封装起来 ， 不需要让外界指导具体实现细节 ， 这就是封装的思想</p>
@@ -343,63 +243,49 @@
 <p>属性和方法被其他类继承后 ， 他们可以具有不同的数据类型或表现出不同的行为 ， 这使得同一个属性和方法在不同的类中具有不同的语义</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述构造方法的特点</p>
+<li><p>简述构造方法的特点</p>
 <blockquote>
 <ol>
-<li class="lvl-3">构造方法与类名相同</li>
-<li class="lvl-3">在构造方法名的前面没有返回值类型的声明</li>
-<li class="lvl-3">在构造方法中不能使用return 语句返回一个值</li>
+<li>构造方法与类名相同</li>
+<li>在构造方法名的前面没有返回值类型的声明</li>
+<li>在构造方法中不能使用return 语句返回一个值</li>
 </ol>
 </blockquote>
 </li>
 </ol>
 </li>
-<li class="lvl-3">
-<p>编程题：</p>
+<li><p>编程题：</p>
 <ol>
-<li class="lvl-7">
-<p>某公司正在进行招聘工作 ， 被招聘人员需要填写个人信息 ，编写个人简历的封装类Resume , 并编写测试类进行测试</p>
+<li><p>某公司正在进行招聘工作 ， 被招聘人员需要填写个人信息 ，编写个人简历的封装类Resume , 并编写测试类进行测试 </p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.north.chapter03;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Resume</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String sex;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Resume</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Resume</span><span class="params">(String name, String sex, <span class="type">int</span> age)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.sex = sex;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getSex</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> sex;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setSex</span><span class="params">(String sex)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.sex = sex;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">introdece</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;姓名：&quot;</span> + <span class="built_in">this</span>.getName());</span><br><span class="line">        System.out.println(<span class="string">&quot;性别：&quot;</span> + <span class="built_in">this</span>.getSex());</span><br><span class="line">        System.out.println(<span class="string">&quot;年龄:&quot;</span> + <span class="built_in">this</span>.getAge());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">package</span> com.north.chapter03;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Application</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Resume</span> <span class="variable">resume</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Resume</span>(<span class="string">&quot;李四&quot;</span> , <span class="string">&quot;男&quot;</span> , <span class="number">20</span>);</span><br><span class="line">        resume.introdece();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="第四章：面向对象-下">第四章：面向对象(下)</h2>
+<h2 id="第四章：面向对象-下"><a href="#第四章：面向对象-下" class="headerlink" title="第四章：面向对象(下)"></a>第四章：面向对象(下)</h2><ol>
+<li>一个类如果要实现一个接口 ， 那么它就需要重写接口中定义的全部方法 ， 否则该类就必须定义成 抽象类</li>
+<li>接口中定义的变量默认是 public static final 型 ， 且必须赋初值</li>
+<li>java中的 instanceof 关键字可以判断一个对象是否为某个类(或接口) 的实例</li>
+<li><p>简答题</p>
 <ol>
-<li class="lvl-3">
-<p>一个类如果要实现一个接口 ， 那么它就需要重写接口中定义的全部方法 ， 否则该类就必须定义成 抽象类</p>
-</li>
-<li class="lvl-3">
-<p>接口中定义的变量默认是 public static final 型 ， 且必须赋初值</p>
-</li>
-<li class="lvl-3">
-<p>java中的 instanceof 关键字可以判断一个对象是否为某个类(或接口) 的实例</p>
-</li>
-<li class="lvl-3">
-<p>简答题</p>
-<ol>
-<li class="lvl-7">
-<p>简述java中继承的概念以及使用继承的好处</p>
+<li><p>简述java中继承的概念以及使用继承的好处</p>
 <blockquote>
 <p>概念： 在java中 ， 类的继承是指在一个现有类的基础上构建一个新的类 ， 构建出来的新类被作子类 ， 现有类被作为父类 ， 子类会自动拥有父类所有可继承的属性和方法。</p>
 <p>好处：继承性主要描述的是类与类之间的关系 ， 通过继承 ， 可以无需重新编写原有类的情况下 ， 对原有类的功能进行使用和扩展</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述多态的作用</p>
+<li><p>简述多态的作用</p>
 <blockquote>
 <p>java中的多态性能够提高代码的灵活性 ， 可维护性和可扩展性 ， 是的程序设计更符合面向对象的思想</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述接口和抽象类的区别</p>
+<li><p>简述接口和抽象类的区别</p>
 <blockquote>
 <ol>
-<li class="lvl-3">接口只能定义抽象方法 ， 而抽象类可以定义抽象方法和非抽象方法</li>
-<li class="lvl-3">类可以实现多个接口 ， 但只能继承一个抽象类</li>
-<li class="lvl-3">接口中的成员默认是 public  , 抽象类中的成员可以有多种访问权限</li>
-<li class="lvl-3">抽象类可以有构造方法 ， 而接口不能有构造方法</li>
+<li>接口只能定义抽象方法 ， 而抽象类可以定义抽象方法和非抽象方法</li>
+<li>类可以实现多个接口 ， 但只能继承一个抽象类</li>
+<li>接口中的成员默认是 public  , 抽象类中的成员可以有多种访问权限</li>
+<li>抽象类可以有构造方法 ， 而接口不能有构造方法</li>
 </ol>
 </blockquote>
 </li>
@@ -407,290 +293,162 @@
 </li>
 </ol>
 <p>‍</p>
-<h2 id="第五章：-异常">第五章： 异常</h2>
+<h2 id="第五章：-异常"><a href="#第五章：-异常" class="headerlink" title="第五章： 异常"></a>第五章： 异常</h2><ol>
+<li>Java 中的异常是指Java程序在运行时可能出现的错误或非正常情况</li>
+<li><p>Throwable 类的继承体系图</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231221172526-4vr5bcn.png" alt="image">​</p>
+</li>
+<li><p>RuntimeException 类及其子类用于表示运行时异常</p>
+</li>
+<li>异常分为两种 ， 分别是 运行时异常 和 编译时异常</li>
+<li>自定义异常需要继承</li>
+<li>Exception 类</li>
+<li><p>简答题</p>
 <ol>
-<li class="lvl-3">
-<p>Java 中的异常是指Java程序在运行时可能出现的错误或非正常情况</p>
-</li>
-<li class="lvl-3">
-<p>Throwable 类的继承体系图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231221172526-4vr5bcn.png" alt="image">​</p>
-</li>
-<li class="lvl-3">
-<p>RuntimeException 类及其子类用于表示运行时异常</p>
-</li>
-<li class="lvl-3">
-<p>异常分为两种 ， 分别是 运行时异常 和 编译时异常</p>
-</li>
-<li class="lvl-3">
-<p>自定义异常需要继承</p>
-</li>
-<li class="lvl-3">
-<p>Exception 类</p>
-</li>
-<li class="lvl-3">
-<p>简答题</p>
-<ol>
-<li class="lvl-7">
-<p>写出处理异常的5个关键字</p>
+<li><p>写出处理异常的5个关键字</p>
 <blockquote>
 <p>try , catch , finally , throw , throws</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述 try … catch 语句的异常处理流程并画出流程图</p>
+<li><p>简述 try .. catch 语句的异常处理流程并画出流程图</p>
 <blockquote>
 <p>程序通过try语句捕获可能出现的异常，如果try语句没有捕获到异常，则直接跳出try…catch语句块执行其他程序；如果在try语句中捕获到了异常，则程序会自动跳转到catch语句中找到匹配的异常类型进行相应的处理。如果try语句捕获到的异常与catch语句例的异常匹配，则先执行catch中的语句，最后执行其他程序语句。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231221174731-8n6gjcs.png" alt="image">​</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述处理编译时异常的两种方式</p>
+<li><p>简述处理编译时异常的两种方式</p>
 <blockquote>
 <ol>
-<li class="lvl-3">使用try … catch 语句对异常进行捕获处理</li>
-<li class="lvl-3">使用throws 关键字声明抛出异常 ， 调用者对异常进行处理</li>
+<li>使用try … catch 语句对异常进行捕获处理</li>
+<li>使用throws 关键字声明抛出异常 ， 调用者对异常进行处理</li>
 </ol>
 </blockquote>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="第六章：Java-API">第六章：Java API</h2>
+<h2 id="第六章：Java-API"><a href="#第六章：Java-API" class="headerlink" title="第六章：Java API"></a>第六章：Java API</h2><ol>
+<li>API 指的是应用程序变成接口</li>
+<li>在Java中定义3个类 ， 用来封装对字符串的操作 ， 分别是 String , StringBuffer , StringBuilder</li>
+<li>java中用来获取String字符串长度的方法是 ： length();</li>
+<li>Java中用于将日期格式或为字符串的类是 ： DateFormat</li>
+<li>Java中用于产生随机数的类位于 java.util包中的Random</li>
+<li>Pattern 类用于创建一个正则表达式 ， 也可以说创建一个匹配模式 ，它的构造方法是私有的 ， 不可以直接创建正则表达式</li>
+<li><p>简答题：</p>
 <ol>
-<li class="lvl-3">
-<p>API 指的是应用程序变成接口</p>
-</li>
-<li class="lvl-3">
-<p>在Java中定义3个类 ， 用来封装对字符串的操作 ， 分别是 String , StringBuffer , StringBuilder</p>
-</li>
-<li class="lvl-3">
-<p>java中用来获取String字符串长度的方法是 ： length();</p>
-</li>
-<li class="lvl-3">
-<p>Java中用于将日期格式或为字符串的类是 ： DateFormat</p>
-</li>
-<li class="lvl-3">
-<p>Java中用于产生随机数的类位于 java.util包中的Random</p>
-</li>
-<li class="lvl-3">
-<p>Pattern 类用于创建一个正则表达式 ， 也可以说创建一个匹配模式 ，它的构造方法是私有的 ， 不可以直接创建正则表达式</p>
-</li>
-<li class="lvl-3">
-<p>简答题：</p>
-<ol>
-<li class="lvl-7">
-<p>简述 String , StringBuffer 和 StringBuilder 三者的区别</p>
+<li><p>简述 String , StringBuffer 和 StringBuilder 三者的区别</p>
 <blockquote>
 <p>String类表示的字符串是常量，一旦创建后，内容和长度都是无法改变的。而StringBuilder和StringBuffer表示字符容器，其内容和长度可以随时修改。在操作字符串时，如果该字符串仅用于表示数据类型，则使用String类即可，但是如果需要对字符串中的字符进行增删操作，则使用StringBuffer与StringBuilder类。如果有大量字符串拼接操作，不要求线程安全的情况下，采用StringBuilder更高效。相反如果需要线程安全则需要使用StringBuffer。</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述8中基本数据类型及其对应的包装类</p>
-<table>
-<thead>
-<tr>
-<th><strong>基本数据类型</strong></th>
-<th><strong>对应的包装类</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>byte</td>
-<td>Byte</td>
-</tr>
-<tr>
-<td>char</td>
-<td>Character</td>
-</tr>
-<tr>
-<td>int</td>
-<td>Integer</td>
-</tr>
-<tr>
-<td>short</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>long</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>float</td>
-<td>Float</td>
-</tr>
-<tr>
-<td>double</td>
-<td>Double</td>
-</tr>
-<tr>
-<td>boolean</td>
-<td>Boolean</td>
-</tr>
-</tbody>
-</table>
+<li><p>简述8中基本数据类型及其对应的包装类</p>
+<p> |<strong>基本数据类型</strong>|<strong>对应的包装类</strong>|<br> | ————-| —————-|<br> |byte|Byte|<br> |char|Character|<br> |int|Integer|<br> |short|Short|<br> |long|Long|<br> |float|Float|<br> |double|Double|<br> |boolean|Boolean|</p>
 </li>
 </ol>
 </li>
-<li class="lvl-3">
-<p>编程题</p>
+<li><p>编程题</p>
 <ol>
-<li class="lvl-7">
-<p>每次随机生成10个0~100的随机正整数</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Demo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">            System.out.println(<span class="keyword">new</span> <span class="title class_">Random</span>().nextInt(<span class="number">100</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li class="lvl-7">
-<p>计算从今天算起100天以后是几月几日 ， 并格式化成xxxx年x月x日的形式打印出来</p>
-<p>提示：</p>
+<li><p>每次随机生成10个0~100的随机正整数</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Demo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">            System.out.println(<span class="keyword">new</span> <span class="title class_">Random</span>().nextInt(<span class="number">100</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>计算从今天算起100天以后是几月几日 ， 并格式化成xxxx年x月x日的形式打印出来</p>
+<p> 提示：</p>
 <ol>
-<li class="lvl-11">
-<p>调用Calendar类的add()方法计算100天以后得日期</p>
-</li>
-<li class="lvl-11">
-<p>调用Calendar类的getTime()方法返回Date类型的对象</p>
-</li>
-<li class="lvl-11">
-<p>教师用FULL格式的DateFormat对象 ， 调用format()方法格式化Date对象</p>
-</li>
-</ol>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Calendar</span> <span class="variable">calendar</span> <span class="operator">=</span> Calendar.getInstance();</span><br><span class="line">        calendar.add(Calendar.DATE , <span class="number">100</span>);</span><br><span class="line">        <span class="type">Date</span> <span class="variable">date</span> <span class="operator">=</span> calendar.getTime();</span><br><span class="line">        <span class="type">DateFormat</span> <span class="variable">format</span> <span class="operator">=</span> DateFormat.getDateInstance(DateFormat.FULL);</span><br><span class="line">        <span class="type">String</span> <span class="variable">string</span> <span class="operator">=</span> format.format(date);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>调用Calendar类的add()方法计算100天以后得日期</li>
+<li>调用Calendar类的getTime()方法返回Date类型的对象</li>
+<li><p>教师用FULL格式的DateFormat对象 ， 调用format()方法格式化Date对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Calendar</span> <span class="variable">calendar</span> <span class="operator">=</span> Calendar.getInstance();</span><br><span class="line">        calendar.add(Calendar.DATE , <span class="number">100</span>);</span><br><span class="line">        <span class="type">Date</span> <span class="variable">date</span> <span class="operator">=</span> calendar.getTime();</span><br><span class="line">        <span class="type">DateFormat</span> <span class="variable">format</span> <span class="operator">=</span> DateFormat.getDateInstance(DateFormat.FULL);</span><br><span class="line">        <span class="type">String</span> <span class="variable">string</span> <span class="operator">=</span> format.format(date);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="第七章：-集合">第七章： 集合</h2>
-<ol>
-<li class="lvl-3">
-<p>集合的核心继承体系图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231221194231-tpgiwrj.png" alt="image"></p>
 </li>
-<li class="lvl-3">
-<p>Collection 是所有单列集合的父接口</p>
+</ol>
+<h2 id="第七章：-集合"><a href="#第七章：-集合" class="headerlink" title="第七章： 集合"></a>第七章： 集合</h2><ol>
+<li><p>集合的核心继承体系图</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/NorthPoet/images/images/image-20231221194231-tpgiwrj.png" alt="image"></p>
 </li>
-<li class="lvl-3">
-<p>使用Iterator 遍历集合时 ， 首先需要调用 hashNext() 方法区判断是否存在下一个元素 ， 若存在下一个元素 ， 则调用 next() 方法取出该元素</p>
+<li>Collection 是所有单列集合的父接口</li>
+<li><p>使用Iterator 遍历集合时 ， 首先需要调用 hashNext() 方法区判断是否存在下一个元素 ， 若存在下一个元素 ， 则调用 next() 方法取出该元素</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">	<span class="type">Object</span> <span class="variable">next</span> <span class="operator">=</span> iterator.next();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li class="lvl-3">
-<p>如果要对TreeSet集合中的对象进行排序 ， 必须实现 Comparable 接口</p>
+<li><p>如果要对TreeSet集合中的对象进行排序 ， 必须实现 Comparable 接口</p>
 </li>
-<li class="lvl-3">
-<p>ArrayList 内部封装了一个长度可变的 数组</p>
-</li>
-<li class="lvl-3">
-<p>ArrayList 集合查询元素的速度很快 ， 但是增删改查效率较低</p>
-</li>
-<li class="lvl-3">
-<p>List 集合的特点是元素有序并且可重复</p>
-</li>
-<li class="lvl-3">
-<p>Set集合的她点事元素无序并且不可重复</p>
-</li>
-<li class="lvl-3">
-<p>简答题</p>
+<li>ArrayList 内部封装了一个长度可变的 数组</li>
+<li>ArrayList 集合查询元素的速度很快 ， 但是增删改查效率较低</li>
+<li>List 集合的特点是元素有序并且可重复</li>
+<li>Set集合的她点事元素无序并且不可重复</li>
+<li><p>简答题</p>
 <ol>
-<li class="lvl-7">
-<p>简述集合List ， Set 和Map 的区别</p>
+<li><p>简述集合List ， Set 和Map 的区别</p>
 <blockquote>
 <p>List的特点是元素有序、可重复。List接口的主要实现类有ArrayList和LinkedList。</p>
 <p>Set的特点是元素无序、不可重复。Set接口的主要实现类有HashSet和TreeSet。Map的特点是存储的元素是键(Key)、值(Value)映射关系，元素都是成对出现的。Map接口的主要实现类有HashMap和TreeMap。</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>为什么ArrayList 的增删改查操作比较慢 ， 而查找操作比较快</p>
+<li><p>为什么ArrayList 的增删改查操作比较慢 ， 而查找操作比较快</p>
 <blockquote>
 <p>由于ArrayList集合的底层是使用一个数组来保存元素，在增加或删除指定位置的元素时，会导致创建新的数组，效率比较低，因此不适合做大量的增删操作。但这种数组的结构允许程序通过索引的方式来访问元素，因此使用ArrayList集合查找元素很便捷。</p>
 </blockquote>
 </li>
 </ol>
 </li>
-<li class="lvl-4">
-<p>编程题</p>
+<li><p>编程题</p>
 <ol>
-<li class="lvl-8">
-<p>编写程序，向ArmsList集合中添加元素，然后遍历并输出这些元素。</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        list.add(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;c&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        <span class="type">Iterator</span> <span class="variable">iterator</span> <span class="operator">=</span> list.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            <span class="type">Object</span> <span class="variable">next</span> <span class="operator">=</span> iterator.next();</span><br><span class="line">            System.out.println(next);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li class="lvl-8">
-<p>按照下列要求编写程序</p>
+<li><p>编写程序，向ArmsList集合中添加元素，然后遍历并输出这些元素。</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        list.add(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;c&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        <span class="type">Iterator</span> <span class="variable">iterator</span> <span class="operator">=</span> list.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            <span class="type">Object</span> <span class="variable">next</span> <span class="operator">=</span> iterator.next();</span><br><span class="line">            System.out.println(next);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>按照下列要求编写程序</p>
 <ol>
-<li class="lvl-12">
-<p>写一个Student类，包含name和age属性，提供有参构造方法。</p>
-</li>
-<li class="lvl-12">
-<p>在Snudent 类中，重写 toString()方法，输出age和name的值。</p>
-</li>
-<li class="lvl-12">
-<p>在Student类中，重写hashCode()和equals()方法。</p>
+<li>写一个Student类，包含name和age属性，提供有参构造方法。</li>
+<li>在Snudent 类中，重写 toString()方法，输出age和name的值。</li>
+<li><p>在Student类中，重写hashCode()和equals()方法。</p>
 <ol>
-<li class="lvl-16">.hshCode()的返回值是name的哈希值与age的和。</li>
-<li class="lvl-16">.equals()判断对象的name和age是否相同，相同则返回true，不同则返回false。</li>
+<li>.hshCode()的返回值是name的哈希值与age的和。</li>
+<li>.equals()判断对象的name和age是否相同，相同则返回true，不同则返回false。</li>
 </ol>
 </li>
-<li class="lvl-12">
-<p>编写一个测试类，创建一个HashSet＜Student＞对象hs，向hs中添加多个sat对象，假设有两个Student对象相等。输出HashSet集合，观察Student对象是否添加成功。</p>
-<p><strong>Student类</strong></p>
+<li><p>编写一个测试类，创建一个HashSet＜Student＞对象hs，向hs中添加多个sat对象，假设有两个Student对象相等。输出HashSet集合，观察Student对象是否添加成功。</p>
+<p> <strong>Student类</strong></p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">             <span class="keyword">package</span> com.north.chapter07;</span><br><span class="line">             </span><br><span class="line">             <span class="keyword">import</span> java.util.*;</span><br><span class="line">             </span><br><span class="line">             </span><br><span class="line">             <span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span> &#123;</span><br><span class="line">             </span><br><span class="line">                 <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">             </span><br><span class="line">                 <span class="keyword">private</span> String name;</span><br><span class="line">             </span><br><span class="line">             </span><br><span class="line">                 <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">(<span class="type">int</span> age, String name)</span> &#123;</span><br><span class="line">                     <span class="built_in">this</span>.age = age;</span><br><span class="line">                     <span class="built_in">this</span>.name = name;</span><br><span class="line">             </span><br><span class="line">                 &#125;</span><br><span class="line">             </span><br><span class="line">             </span><br><span class="line">                 <span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">                     <span class="keyword">return</span> age + <span class="string">&quot;:&quot;</span> + name;</span><br><span class="line">             </span><br><span class="line">                 &#125;</span><br><span class="line">             </span><br><span class="line">             </span><br><span class="line">                 <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span> &#123;</span><br><span class="line">                     <span class="keyword">return</span> name.hashCode() + age;</span><br><span class="line">             </span><br><span class="line">                 &#125;</span><br><span class="line">             </span><br><span class="line">             </span><br><span class="line">                 <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object obj)</span> &#123;</span><br><span class="line">                     <span class="keyword">if</span> (<span class="built_in">this</span> == obj)</span><br><span class="line">                         <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                     <span class="keyword">if</span> (!(obj <span class="keyword">instanceof</span> Student))</span><br><span class="line">                         <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                     <span class="type">Student</span> <span class="variable">stu</span> <span class="operator">=</span> (Student) obj;</span><br><span class="line">                     <span class="keyword">return</span> <span class="built_in">this</span>.name.equals(stu.name) &amp;&amp; <span class="built_in">this</span>.age == stu.age;</span><br><span class="line">             </span><br><span class="line">                 &#125;</span><br><span class="line">             </span><br><span class="line">             &#125;</span><br><span class="line">             </span><br><span class="line"></span><br><span class="line">## 第八章： 泛型</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> 使用泛型的好处</span><br><span class="line"></span><br><span class="line">    &gt; <span class="number">1.</span> 提高类型的安全性</span><br><span class="line">    &gt; <span class="number">2.</span> 消除强制类型转换</span><br><span class="line">    &gt; <span class="number">3.</span> 提高代码的复用性</span><br><span class="line">    &gt; <span class="number">4.</span> 拥有更高的运行效率</span><br><span class="line">    &gt;</span><br><span class="line"><span class="number">2.</span> 泛型类</span><br><span class="line"></span><br><span class="line">    ```java</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span>&lt;T&gt; &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ol>
 </li>
-<li class="lvl-3">
-<p>泛型接口</p>
+<li><p>泛型接口</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">North</span>&lt;T&gt; &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li class="lvl-3">
-<p>泛型方法</p>
+<li><p>泛型方法</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">访问权限修饰符 <span class="keyword">static</span> <span class="keyword">final</span> &lt;类型形象&gt; 返回值类型 方法名 (形参列表) &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li class="lvl-3">
-<p>泛型使用 ? 表示 参数化</p>
+<li><p>泛型使用 ? 表示 参数化</p>
 </li>
-<li class="lvl-3">
-<p>泛型可以用在类 ， 接口和方法的定义中 ，分别称为 泛型类 ， 泛型接口 和 泛型方法</p>
-</li>
-<li class="lvl-3">
-<p>在java程序中 ， 经常会有参数类型或返回值类型不确定的方法 ， 这种方法在java中统称为 泛型方法</p>
-</li>
-<li class="lvl-3">
-<p>泛型接口的实现类有两种定义方式 ， 一种是直接接口中明确给出泛型类型 ， 另一种是直接在 实现 后声明泛型</p>
-</li>
-<li class="lvl-3">
-<p>在实际应用中 ， 只有泛型类被使用时 ， 该类所属的类型才能确定</p>
-</li>
-<li class="lvl-4">
-<p>简答题</p>
+<li>泛型可以用在类 ， 接口和方法的定义中 ，分别称为 泛型类 ， 泛型接口 和 泛型方法</li>
+<li>在java程序中 ， 经常会有参数类型或返回值类型不确定的方法 ， 这种方法在java中统称为 泛型方法</li>
+<li>泛型接口的实现类有两种定义方式 ， 一种是直接接口中明确给出泛型类型 ， 另一种是直接在 实现 后声明泛型</li>
+<li>在实际应用中 ， 只有泛型类被使用时 ， 该类所属的类型才能确定</li>
+<li><p>简答题</p>
 <ol>
-<li class="lvl-8">
-<p>简述泛型的有</p>
+<li><p>简述泛型的有</p>
 <blockquote>
 <ol>
-<li class="lvl-3">
-<p>提高类型的安全性。</p>
-<p>泛型的主要目标是提高Java程序的类型安全性，即可以通过泛型定义对变量类型进行限制，在对变量类型限制之后编译器可以更好的进行类型验证。</p>
+<li><p>提高类型的安全性。</p>
+<p> 泛型的主要目标是提高Java程序的类型安全性，即可以通过泛型定义对变量类型进行限制，在对变量类型限制之后编译器可以更好的进行类型验证。</p>
 </li>
-<li class="lvl-3">
-<p>避免强制类型转换</p>
-<p>使用泛型的另一个好处是避免源代码中的许多强制类型转换。这使得代码可读性更高，并且减少出错机会。尽管减少强制类型转换可以降低使用泛型类代码的复杂度，但是声明泛型变量会带来相应的复杂操作。</p>
+<li><p>避免强制类型转换</p>
+<p> 使用泛型的另一个好处是避免源代码中的许多强制类型转换。这使得代码可读性更高，并且减少出错机会。尽管减少强制类型转换可以降低使用泛型类代码的复杂度，但是声明泛型变量会带来相应的复杂操作。</p>
 </li>
 </ol>
 </blockquote>
 </li>
 </ol>
 </li>
-<li class="lvl-4">
-<p>编程题</p>
+<li><p>编程题</p>
 <ol>
-<li class="lvl-8">
-<p>按照下列提示编写一个泛型接口以及其实现类</p>
+<li><p>按照下列提示编写一个泛型接口以及其实现类</p>
 <ol>
-<li class="lvl-12">
-<p>创建泛型接口Generic<T>,并创建抽象方法get(T t)</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Generic</span>&lt;T&gt; &#123;</span><br><span class="line">      <span class="keyword">void</span> <span class="title function_">get</span><span class="params">(T t)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li class="lvl-12">
-<p>创建实现类GenericImpl<T> , 并实现get(T t)方法</p>
+<li><p>创建泛型接口Generic<T>,并创建抽象方法get(T t)</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Generic</span>&lt;T&gt; &#123;</span><br><span class="line">      <span class="keyword">void</span> <span class="title function_">get</span><span class="params">(T t)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>创建实现类GenericImpl<T> , 并实现get(T t)方法</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">GenericeImple</span>&lt;T&gt; <span class="keyword">implements</span> <span class="title class_">Generic</span>&lt;T&gt;  &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">get</span><span class="params">(T t)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Received: &quot;</span> + t.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
@@ -698,34 +456,20 @@
 </ol>
 </li>
 </ol>
-<h2 id="第九章：-反射">第九章： 反射</h2>
+<h2 id="第九章：-反射"><a href="#第九章：-反射" class="headerlink" title="第九章： 反射"></a>第九章： 反射</h2><ol>
+<li>反射机制的优点是可以实现动态创建对象和编译</li>
+<li>如果通过Class类实例化其他类的对象 ， 则可以使用 newInstance() 方法 ， 但是必须保证被实例化的类中存在一个无参构造方法</li>
+<li>通过反射可以得到一个类中的所有方法 ， 需要用到 java.lang.reflect 包中的 Method 类</li>
+<li>在反射操作中 ， 通过 getDeclaredFields() 方法可以去的本类中的全部属性</li>
+<li>要取得一个类中的全部方法 ， 可以使用Class 类中的 getMethods() 方法</li>
+<li><p>简答题</p>
 <ol>
-<li class="lvl-3">
-<p>反射机制的优点是可以实现动态创建对象和编译</p>
-</li>
-<li class="lvl-3">
-<p>如果通过Class类实例化其他类的对象 ， 则可以使用 newInstance() 方法 ， 但是必须保证被实例化的类中存在一个无参构造方法</p>
-</li>
-<li class="lvl-3">
-<p>通过反射可以得到一个类中的所有方法 ， 需要用到 java.lang.reflect 包中的 Method 类</p>
-</li>
-<li class="lvl-3">
-<p>在反射操作中 ， 通过 getDeclaredFields() 方法可以去的本类中的全部属性</p>
-</li>
-<li class="lvl-3">
-<p>要取得一个类中的全部方法 ， 可以使用Class 类中的 getMethods() 方法</p>
-</li>
-<li class="lvl-3">
-<p>简答题</p>
-<ol>
-<li class="lvl-7">
-<p>简述反射机制</p>
+<li><p>简述反射机制</p>
 <blockquote>
 <p>Java的反射（reflection）机制是指在程序的运行状态中，可以构造任意一个类的对象，可以得到任意一个对象所属的类的信息，可以调用任意一个类的成员变量和方法，可以获取任意一个对象的属性和方法。这种动态获取程序信息以及动态调用对象的功能称为Java语言的反射机制</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述实例化Class 对象的三种方式</p>
+<li><p>简述实例化Class 对象的三种方式</p>
 <blockquote>
 <p>（1）根据类名获取：类名.class；</p>
 <p>（2）根据对象获取：对象.getClass()；</p>
@@ -735,37 +479,21 @@
 </ol>
 </li>
 </ol>
-<h2 id="第十章：-I-O流">第十章： I/O流</h2>
+<h2 id="第十章：-I-O流"><a href="#第十章：-I-O流" class="headerlink" title="第十章： I/O流"></a>第十章： I/O流</h2><ol>
+<li>Java中的IO流按照传输数据的不同可分为 字节流 和 字符流</li>
+<li>java.io 包中可以用于从文件直接读取字符的类是 Reader</li>
+<li>IO系统提供了两个带缓冲的字节流 ， 分别是 BufferedInputStream 和 BufferedOutputStream</li>
+<li>在JDK中提供了两个可将字节流转换为字符流的类分别是 ： InputStreamReader 和 OutputStreamWriter</li>
+<li>java.io.FileOutputStream 是 OutputStream 的子类 ， 它是操作文件的字节输出流</li>
+<li>转换流实现了字节流和字符流的相互转换</li>
+<li><p>简答题</p>
 <ol>
-<li class="lvl-3">
-<p>Java中的IO流按照传输数据的不同可分为 字节流 和 字符流</p>
-</li>
-<li class="lvl-3">
-<p><a target="_blank" rel="noopener" href="http://java.io">java.io</a> 包中可以用于从文件直接读取字符的类是 Reader</p>
-</li>
-<li class="lvl-3">
-<p>IO系统提供了两个带缓冲的字节流 ， 分别是 BufferedInputStream 和 BufferedOutputStream</p>
-</li>
-<li class="lvl-3">
-<p>在JDK中提供了两个可将字节流转换为字符流的类分别是 ： InputStreamReader 和 OutputStreamWriter</p>
-</li>
-<li class="lvl-3">
-<p>java.io.FileOutputStream 是 OutputStream 的子类 ， 它是操作文件的字节输出流</p>
-</li>
-<li class="lvl-3">
-<p>转换流实现了字节流和字符流的相互转换</p>
-</li>
-<li class="lvl-3">
-<p>简答题</p>
-<ol>
-<li class="lvl-7">
-<p>简述字符流与字节流的区别</p>
+<li><p>简述字符流与字节流的区别</p>
 <blockquote>
 <p>字节流的两个基类是InputStream和OutputStream，字符流的两个基类是Reader和Writer，它们都是Object类的直接子类，字节流是处理以8位字节为基本单位的字节流类；Reader和Writer类是专门处理16位字节的字符流类。</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述InputStreamReader 类与 OutputStreamWriter类的作用</p>
+<li><p>简述InputStreamReader 类与 OutputStreamWriter类的作用</p>
 <blockquote>
 <p>InputStreamReader是Reader的子类，它可以将一个字节输入流转换成字符输入流，方便直接读取字符。OutputStreamWriter是Writer的子类，它可以将一个字节输出流转换成字符输出流，方便直接写入字符。</p>
 </blockquote>
@@ -773,38 +501,26 @@
 </ol>
 </li>
 </ol>
-<h2 id="第十一章：JDBC">第十一章：JDBC</h2>
+<h2 id="第十一章：JDBC"><a href="#第十一章：JDBC" class="headerlink" title="第十一章：JDBC"></a>第十一章：JDBC</h2><ol>
+<li>JDBC 驱动程序管理器专门负责注册特定的JDBC驱动程序 ， 主要通过 java.sql.DriverManager 类实现的</li>
+<li>在编写JDBC应用程序时 ， 必须要把制定数据库驱动程序或类库加载到 classpath 中</li>
+<li>PreparedStatement 是Statement 的子接口 ， 用于执行 预编译 的SQL语句</li>
+<li>创建Statement 对象的作用是 ： 执行SQL语句</li>
+<li><p>简答题：</p>
 <ol>
-<li class="lvl-3">
-<p>JDBC 驱动程序管理器专门负责注册特定的JDBC驱动程序 ， 主要通过 java.sql.DriverManager 类实现的</p>
-</li>
-<li class="lvl-3">
-<p>在编写JDBC应用程序时 ， 必须要把制定数据库驱动程序或类库加载到 classpath 中</p>
-</li>
-<li class="lvl-3">
-<p>PreparedStatement 是Statement 的子接口 ， 用于执行 预编译 的SQL语句</p>
-</li>
-<li class="lvl-3">
-<p>创建Statement 对象的作用是 ： 执行SQL语句</p>
-</li>
-<li class="lvl-3">
-<p>简答题：</p>
-<ol>
-<li class="lvl-7">
-<p>简述JDBC编程的6个开发记录</p>
+<li><p>简述JDBC编程的6个开发记录</p>
 <blockquote>
 <ol>
-<li class="lvl-3">加载并注册数据库驱动；</li>
-<li class="lvl-3">通过DriverManager获取数据库连接；</li>
-<li class="lvl-3">通过Connection对象获取Statement对象；</li>
-<li class="lvl-3">使用Statement执行SQL语句；</li>
-<li class="lvl-3">操作ResultSet结果集；</li>
-<li class="lvl-3">回收数据库资源。</li>
+<li>加载并注册数据库驱动；</li>
+<li>通过DriverManager获取数据库连接；</li>
+<li>通过Connection对象获取Statement对象；</li>
+<li>使用Statement执行SQL语句；</li>
+<li>操作ResultSet结果集；</li>
+<li>回收数据库资源。</li>
 </ol>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>什么是预编译</p>
+<li><p>什么是预编译</p>
 <blockquote>
 <p>所谓预编译,就是说当相同的SQL语句再次执行时,数据库只需使用缓冲区中的数据,而不需要对SQL语句再次编译,从而有效提高数据的访问效率。</p>
 </blockquote>
@@ -812,28 +528,15 @@
 </ol>
 </li>
 </ol>
-<h2 id="第十二章：-多线程">第十二章： 多线程</h2>
+<h2 id="第十二章：-多线程"><a href="#第十二章：-多线程" class="headerlink" title="第十二章： 多线程"></a>第十二章： 多线程</h2><ol>
+<li>实现多线程的两种方式是继承 Thread 和 实现 Runnable 接口</li>
+<li>线程的整个生命周期分为5个阶段 ， 分别是 新建状态 ， 就绪状态 ， 运行状态 ， 堵塞状态 和 死亡状态</li>
+<li>在Thread 类中 ， 提供了 start() 方法用于启动新线程</li>
+<li>执行 sleep() 方法 ， 可以让线程在规定的时间内休眠</li>
+<li>同步代码块使用 synchronized 关键字修饰</li>
+<li><p>简答题：</p>
 <ol>
-<li class="lvl-3">
-<p>实现多线程的两种方式是继承 Thread 和 实现 Runnable 接口</p>
-</li>
-<li class="lvl-3">
-<p>线程的整个生命周期分为5个阶段 ， 分别是 新建状态 ， 就绪状态 ， 运行状态 ， 堵塞状态 和 死亡状态</p>
-</li>
-<li class="lvl-3">
-<p>在Thread 类中 ， 提供了 start() 方法用于启动新线程</p>
-</li>
-<li class="lvl-3">
-<p>执行 sleep() 方法 ， 可以让线程在规定的时间内休眠</p>
-</li>
-<li class="lvl-3">
-<p>同步代码块使用 synchronized 关键字修饰</p>
-</li>
-<li class="lvl-3">
-<p>简答题：</p>
-<ol>
-<li class="lvl-7">
-<p>简述创建多线程的两种方式</p>
+<li><p>简述创建多线程的两种方式</p>
 <blockquote>
 <p>一种是继承java.lang包下的Thread类，覆写Thread类的run()方法，在run()方法中实现运行在线程上的代码。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">Thread</span>() &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">run</span><span class="params">()</span>&#123;&#125;</span><br><span class="line">&#125;.start();</span><br></pre></td></tr></table></figure>
@@ -841,52 +544,35 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyThread</span> <span class="keyword">implements</span> <span class="title class_">Runnable</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">run</span><span class="params">()</span>&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述同步代码块的作用</p>
+<li><p>简述同步代码块的作用</p>
 <blockquote>
 <p>同步代码块的作用是控制线程，保证同步代码块中只能有一个线程在运行，保证了多线程操作数据的安全性</p>
 </blockquote>
 </li>
 </ol>
 </li>
-<li class="lvl-3">
-<p>编程题</p>
+<li><p>编程题</p>
 <ol>
-<li class="lvl-7">
-<p>编写一个多线程程序 ， 模拟火车售票窗口的售票功能 ， 创建线程1 和 线程2 ， 通过这两个线程共同售出100张票</p>
+<li><p>编写一个多线程程序 ， 模拟火车售票窗口的售票功能 ， 创建线程1 和 线程2 ， 通过这两个线程共同售出100张票</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TicketWindow</span> <span class="keyword">implements</span> <span class="title class_">Runnable</span>&#123;</span><br><span class="line">    <span class="comment">// 定义100张票</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">run</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">while</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="type">Thread</span> <span class="variable">th</span> <span class="operator">=</span> Thread.currentThread();</span><br><span class="line">            <span class="type">String</span> <span class="variable">th_name</span> <span class="operator">=</span> th.getName();</span><br><span class="line">            System.out.println(th_name + <span class="string">&quot; 正在发售第 &quot;</span>  + num-- + <span class="string">&quot; 张票&quot;</span> );</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Application</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">TicketWindow</span> <span class="variable">ticketWindow</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">TicketWindow</span>();</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Thread</span>(ticketWindow , <span class="string">&quot;线程1&quot;</span>).start();</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Thread</span>(ticketWindow , <span class="string">&quot;线程2&quot;</span>).start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="第十三章-：-网络编程">第十三章 ： 网络编程</h2>
+<h2 id="第十三章-：-网络编程"><a href="#第十三章-：-网络编程" class="headerlink" title="第十三章 ： 网络编程"></a>第十三章 ： 网络编程</h2><ol>
+<li>基于TCP/IP的网络草考模型被分为4层 ， 分别是 链路层 ， 网络层 ， 运输层 和应用层</li>
+<li>在进行网络通信时 ， 传输层可以采用TCP ， 也可以采用UDP</li>
+<li>在下载文件时 ，必须采用TCP</li>
+<li>JDK提供了 DatagramSocket 类 ， 该类可以发送和接受数据包</li>
+<li>在JDK中提供了两个用于实现TCP程序的类 ， 一个是 ServerSocket 类 ， 用于表示服务端 ， 另一个是Socket类 ， 用于表示客户端</li>
+<li><p>简答题</p>
 <ol>
-<li class="lvl-3">
-<p>基于TCP/IP的网络草考模型被分为4层 ， 分别是 链路层 ， 网络层 ， 运输层 和应用层</p>
-</li>
-<li class="lvl-3">
-<p>在进行网络通信时 ， 传输层可以采用TCP ， 也可以采用UDP</p>
-</li>
-<li class="lvl-3">
-<p>在下载文件时 ，必须采用TCP</p>
-</li>
-<li class="lvl-3">
-<p>JDK提供了 DatagramSocket 类 ， 该类可以发送和接受数据包</p>
-</li>
-<li class="lvl-3">
-<p>在JDK中提供了两个用于实现TCP程序的类 ， 一个是 ServerSocket 类 ， 用于表示服务端 ， 另一个是Socket类 ， 用于表示客户端</p>
-</li>
-<li class="lvl-3">
-<p>简答题</p>
-<ol>
-<li class="lvl-7">
-<p>简述TCP通信与UDP通信的主要区别</p>
+<li><p>简述TCP通信与UDP通信的主要区别</p>
 <blockquote>
 <p>UDP通信与TCP通信的区别在于，UDP中只有发送端和接收端，不区分客户端与服务器端，计算机之间可以任意地发送数据；而TCP通信是严格区分客户端与服务器端的，在通信时，必须先由客户端去连接服务器端才能实现通信，服务器端不可以主动连接客户端，并且服务器端程序需要事先启动，等待客户端的连接。</p>
 </blockquote>
 </li>
-<li class="lvl-7">
-<p>简述TCP中服务器端与客户端的连接过程</p>
+<li><p>简述TCP中服务器端与客户端的连接过程</p>
 <blockquote>
 <p>在TCP连接中必须要明确客户端与服务器端，由客户端向服务器端发出连接请求，每次连接的创建都需要经过“三次握手”。第一次握手，客户端向服务器端发出连接请求，等待服务器确认；第二次握手，服务器端向客户端回送一个响应，通知客户端收到了连接请求；第三次握手，客户端再次向服务器端发送确认信息，确认连接。</p>
 </blockquote>
