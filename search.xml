@@ -4,23 +4,23 @@
   
     
     <entry>
-      <title>(error) ERR Unknown subcommand or wrong number of arguments for CREATE. Try XGROUP HELP</title>
-      <link href="/posts/8b91221e.html"/>
-      <url>/posts/8b91221e.html</url>
+      <title>报错杂谈</title>
+      <link href="/posts/4fc13381.html"/>
+      <url>/posts/4fc13381.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>原因：执行完之后 报错：127.0.0.1:6379&gt; XGROUP CREATE --mkstream stream.orders g1 0 (error) ERR Unknown subcommand or wrong number of  arguments for ‘CREATE’. Try XGROUP HELP.</p></blockquote><p>看起来您尝试使用的命令语法不符合 Redis 的要求。<code>XGROUP CREATE</code>​ 命令的语法应该是这样的：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XGROUP CREATE key groupname <span class="built_in">id</span> [MKSTREAM]</span><br></pre></td></tr></table></figure><p>根据您提供的错误信息 <code>(error) ERR Unknown subcommand or wrong number of arguments for 'CREATE'. Try XGROUP HELP.</code>​，这表明 Redis 服务器无法识别 <code>--mkstream</code>​ 选项。这通常意味着您的 Redis 版本不支持这个选项。</p><h3 id="解决方案">解决方案</h3><h4 id="方法-1-使用-XADD​-创建流">方法 1: 使用 <code>XADD</code>​ 创建流</h4><p>如果您不能升级到支持 <code>MKSTREAM</code>​ 的 Redis 版本，您可以先使用 <code>XADD</code>​ 命令创建一个空的流，然后使用 <code>XGROUP CREATE</code>​ 命令创建消费者组。</p><ol><li class="lvl-3"><p>使用 <code>XADD</code>​ 命令创建一个空的流：</p> <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XADD stream.orders * somefield somevalue</span><br></pre></td></tr></table></figure></li><li class="lvl-3"><p>使用 <code>XGROUP CREATE</code>​ 命令创建消费者组：</p> <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XGROUP CREATE stream.orders g1 0</span><br></pre></td></tr></table></figure></li><li class="lvl-3"><p>删除用于初始化流的消息（可选）：</p> <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XDEL stream.orders 1</span><br></pre></td></tr></table></figure></li></ol><p>这里假设流中只有一个消息，其 ID 为 <code>1</code>​。</p><h4 id="方法-2-升级-Redis-版本">方法 2: 升级 Redis 版本</h4><p>如果您可以升级 Redis 版本，建议升级到至少 Redis 6.0，这样就可以直接使用 <code>MKSTREAM</code>​ 选项。升级后，您可以使用正确的命令格式：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XGROUP CREATE --mkstream stream.orders g1 0</span><br></pre></td></tr></table></figure><h3 id="检查-Redis-版本">检查 Redis 版本</h3><p>在尝试上述解决方案之前，请确保您知道正在使用的 Redis 版本。您可以通过运行以下命令来查看 Redis 的版本：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO server</span><br></pre></td></tr></table></figure><p>在返回的信息中查找 <code>redis_version</code>​ 字段以确认版本号。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Redis-报错合集">Redis 报错合集</h2><ul class="lvl-0"><li class="lvl-2"><a href="https://www.cnblogs.com/NorthPoet/p/18332613">(error) ERR Unknown subcommand or wrong number of arguments for ‘CREATE’. Try XGROUP HELP</a></li></ul>]]></content>
       
       
       <categories>
           
-          <category> 报错杂谈 </category>
+          <category> Java后端 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> redis报错杂谈 </tag>
+            <tag> 报错杂谈 </tag>
             
         </tags>
       
