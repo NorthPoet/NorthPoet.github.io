@@ -932,11 +932,7 @@ div#category {
 
 /* 生活杂谈 */
 #page .category-lists .category-list li.category-list-item:nth-child(7) {
-  background: -webkit-linear-gradient(left, #009ad6, #1b315e);
-  background: -moz-linear-gradient(left, #009ad6, #1b315e);
-  background: -o-linear-gradient(left, #009ad6, #1b315e);
-  background: -ms-linear-gradient(left, #009ad6, #1b315e);
-  background: linear-gradient(to right, #009ad6, #1b315e);
+  background: linear-gradient(to right, #3468d3, #46b9ec);
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(7) a.category-list-link::before {
