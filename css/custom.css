@@ -943,6 +943,10 @@ div#category {
   /* content: "💬"; */
 }
 
+#page .category-lists .category-list li.category-list-item:nth-child(8) {
+  background: linear-gradient(to right, #9c50fe, #b985ef);
+}
+
 #page .category-lists .category-list .category-list-item {
   position: relative;
   display: inline-block;
@@ -955,6 +959,8 @@ div#category {
   box-shadow: rgb(183 183 183 / 30%) 50px 50px 50px 50px inset;
   border-radius: 8px;
 }
+
+
 
 /* 生肖大小 */
 svg.icon {
