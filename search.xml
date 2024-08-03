@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>报错杂谈</title>
-      <link href="/posts/4fc13381.html"/>
-      <url>/posts/4fc13381.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="Redis-报错合集"><a href="#Redis-报错合集" class="headerlink" title="Redis 报错合集"></a>Redis 报错合集</h2><ul><li><a href="https://www.cnblogs.com/NorthPoet/p/18332613">(error) ERR Unknown subcommand or wrong number of arguments for ‘CREATE’. Try XGROUP HELP</a></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Java后端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 报错杂谈 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>自定义Callout样式</title>
       <link href="/posts/442fdc66.html"/>
       <url>/posts/442fdc66.html</url>
